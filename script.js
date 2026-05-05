@@ -1,753 +1,177 @@
 const archiveData = [
   {
     year: 2025,
-    dataType: "Wrapped + favoritsange-data",
     minutes: 41100,
-    topGenre: "Dansk pop",
     topArtist: "Phlake",
     topSong: "come here",
+    topGenre: "Dansk pop",
     topPodcast: null,
     topArtists: ["Phlake", "Mike Posner", "Wads", "Stig Rossen", "Khalid"],
     songs: [
-      {
-        rank: 1,
-        title: "come here",
-        artist: "Wads",
-        spotifyUrl: "https://open.spotify.com/track/63ms88HVjrxc1gwx4bzrmO"
-      },
-      {
-        rank: 2,
-        title: "beast",
-        artist: "Wads"
-      },
-      {
-        rank: 3,
-        title: "Under The Influence",
-        artist: "ORA"
-      },
-      {
-        rank: 4,
-        title: "Lad Det Ske - Fra Frost",
-        artist: "Maria Lucia"
-      },
-      {
-        rank: 5,
-        title: "jukeboxx",
-        artist: "Wads"
-      },
-      {
-        rank: 6,
-        title: "Menneskesøn",
-        artist: "Stig Rossen"
-      },
-      {
-        rank: 7,
-        title: "Howling at the Moon",
-        artist: "Mike Posner, salem ilese"
-      },
-      {
-        rank: 8,
-        title: "time machine",
-        artist: "Wads"
-      },
-      {
-        rank: 9,
-        title: "Jeg er på vej",
-        artist: "Stig Rossen, Jamie Morton"
-      },
-      {
-        rank: 10,
-        title: "Jeg Ka' Rigtig Godt Li' Dig",
-        artist: "Ida Laurberg, andreas odbjerg"
-      },
-      {
-        rank: 11,
-        title: "Jeg Vil Ha' En Baby",
-        artist: "Anne-Grethe Bjarup Riis, Anders W. Berthelsen"
-      },
-      {
-        rank: 12,
-        title: "Let It Go",
-        artist: "NOTSOBAD, MA:RK"
-      },
-      {
-        rank: 13,
-        title: "10 Feet (feat. Gorgeous)",
-        artist: "Phlake, Gorgeous"
-      },
-      {
-        rank: 14,
-        title: "WACUKA",
-        artist: "AVAION, Sofiya Nzau"
-      }
+      { rank: 1, title: "come here", artist: "Wads", minutes: null },
+      { rank: 2, title: "beast", artist: "Wads", minutes: null },
+      { rank: 3, title: "Under The Influence", artist: "ORA", minutes: null },
+      { rank: 4, title: "Lad Det Ske - Fra Frost", artist: "Maria Lucia", minutes: null },
+      { rank: 5, title: "jukeboxx", artist: "Wads", minutes: null }
     ]
   },
   {
     year: 2024,
-    dataType: "Wrapped + favoritsange-data",
     minutes: 38665,
     podcastMinutes: 16339,
-    topGenre: "Sport",
     topArtist: "Phlake",
-    topArtistMinutes: 4350,
-    topArtistPercentile: "Top 0,05 %",
-    topArtistStreak: "8 dage i træk",
     topSong: "Krumme's Sang",
-    topSongArtist: "Laus Høybye, Krummerne",
-    topSongStreams: 95,
-    topSongFirstStream: "9. februar",
-    topSongPercentile: "Top 0,001 %",
+    topGenre: "Sport",
     topPodcast: "Mediano",
-    podcastTopic: "Sport",
-    podcastTopicPercentile: "Top 4 %",
     topArtists: ["Phlake", "Stig Rossen", "Mercedes the Virus", "Laus Høybye", "ZOO Børneklub"],
-    topPodcasts: ["Mediano", "Støt Mediano", "Q&CO på B.T.", "Godnathistorier For Børn - Bamsen Geo", "Third Ear"],
     songs: [
-      {
-        rank: 1,
-        title: "Krumme's Sang",
-        artist: "Laus Høybye, Krummerne"
-      },
-      {
-        rank: 2,
-        title: "Menneskesøn",
-        artist: "Stig Rossen"
-      },
-      {
-        rank: 3,
-        title: "Jeg Vil Ha' En Baby",
-        artist: "Anne-Grethe Bjarup Riis, Anders W. Berthelsen"
-      },
-      {
-        rank: 4,
-        title: "10 Feet (feat. Gorgeous)",
-        artist: "Phlake, Gorgeous"
-      },
-      {
-        rank: 5,
-        title: "Jeg er på vej",
-        artist: "Stig Rossen, Jamie Morton"
-      },
-      {
-        rank: 6,
-        title: "Kom Ud",
-        artist: "Kaya Brüel, Troels Lyby"
-      },
-      {
-        rank: 7,
-        title: "Pelle og Kaya",
-        artist: "ZOO Børneklub"
-      },
-      {
-        rank: 8,
-        title: "Aliens Need Love Too",
-        artist: "Phlake, Mercedes the Virus"
-      },
-      {
-        rank: 9,
-        title: "Fremmed som mig",
-        artist: "Stig Rossen"
-      },
-      {
-        rank: 10,
-        title: "Pink + White",
-        artist: "Frank Ocean"
-      },
-      {
-        rank: 11,
-        title: "Jeg Vil Finde Vej",
-        artist: "Laus Høybye"
-      },
-      {
-        rank: 12,
-        title: "T.I.D.O.Y.S.",
-        artist: "Phlake, Mercedes the Virus"
-      },
-      {
-        rank: 13,
-        title: "Sommersangen",
-        artist: "ZOO Børneklub"
-      },
-      {
-        rank: 14,
-        title: "Jeg bli’r meget snart majestæt",
-        artist: "Andreas Hviid, Amalie Alstrup, Peter Zhelder"
-      }
+      { rank: 1, title: "Krumme's Sang", artist: "Laus Høybye, Krummerne" },
+      { rank: 2, title: "Menneskesøn", artist: "Stig Rossen" },
+      { rank: 3, title: "Jeg Vil Ha' En Baby", artist: "Anne-Grethe Bjarup Riis, Anders W. Berthelsen" },
+      { rank: 4, title: "10 Feet (feat. Gorgeous)", artist: "Phlake, Gorgeous" },
+      { rank: 5, title: "Jeg er på vej", artist: "Stig Rossen, Jamie Morton" }
     ]
   },
   {
     year: 2023,
-    dataType: "Favoritsange-data",
     minutes: null,
-    topGenre: null,
-    topArtist: "Phlake, Mercedes the Virus",
+    topArtist: "Phlake",
     topSong: "T.I.D.O.Y.S.",
+    topGenre: null,
     topPodcast: null,
     topArtists: ["Phlake", "Mercedes the Virus", "Dua Lipa", "Ida Laurberg", "Stig Rossen"],
     songs: [
-      {
-        rank: 1,
-        title: "T.I.D.O.Y.S.",
-        artist: "Phlake, Mercedes the Virus"
-      },
-      {
-        rank: 2,
-        title: "Better Days",
-        artist: "Phlake"
-      },
-      {
-        rank: 3,
-        title: "Don’t Start Now",
-        artist: "Dua Lipa"
-      },
-      {
-        rank: 4,
-        title: "Jeg Ka' Rigtig Godt Li' Dig",
-        artist: "Ida Laurberg, andreas odbjerg"
-      },
-      {
-        rank: 5,
-        title: "Jeg er på vej",
-        artist: "Stig Rossen, Jamie Morton"
-      },
-      {
-        rank: 6,
-        title: "Aliens Need Love Too",
-        artist: "Phlake, Mercedes the Virus"
-      },
-      {
-        rank: 7,
-        title: "Uden Dig",
-        artist: "Ukendt Kunstner"
-      },
-      {
-        rank: 8,
-        title: "Borte-Tit",
-        artist: "Minisjang"
-      },
-      {
-        rank: 9,
-        title: "Du er mit hjerteslag",
-        artist: "Stig Rossen, Birgitte Raaberg"
-      },
-      {
-        rank: 10,
-        title: "Get It",
-        artist: "Phlake, Esthero"
-      },
-      {
-        rank: 11,
-        title: "STOR MAN",
-        artist: "Tobias Rahim, Victor Leksell"
-      },
-      {
-        rank: 12,
-        title: "Hena",
-        artist: "Ukendt Kunstner"
-      },
-      {
-        rank: 13,
-        title: "Føles Godt",
-        artist: "URO, Mekdes"
-      },
-      {
-        rank: 14,
-        title: "2min (feat. Vera)",
-        artist: "Phlake, Vera"
-      }
+      { rank: 1, title: "T.I.D.O.Y.S.", artist: "Phlake, Mercedes the Virus" },
+      { rank: 2, title: "Better Days", artist: "Phlake" },
+      { rank: 3, title: "Don’t Start Now", artist: "Dua Lipa" },
+      { rank: 4, title: "Jeg Ka' Rigtig Godt Li' Dig", artist: "Ida Laurberg, andreas odbjerg" },
+      { rank: 5, title: "Jeg er på vej", artist: "Stig Rossen, Jamie Morton" }
     ]
   },
   {
     year: 2022,
-    dataType: "Favoritsange-data",
     minutes: null,
-    topGenre: null,
-    topArtist: "Phlake, Vera",
+    topArtist: "Phlake",
     topSong: "2min (feat. Vera)",
+    topGenre: null,
     topPodcast: null,
     topArtists: ["Phlake", "andreas odbjerg", "De Danske Hyrder", "Tobias Rahim", "Josef"],
     songs: [
-      {
-        rank: 1,
-        title: "2min (feat. Vera)",
-        artist: "Phlake, Vera"
-      },
-      {
-        rank: 2,
-        title: "hjem fra fabrikken",
-        artist: "andreas odbjerg"
-      },
-      {
-        rank: 3,
-        title: "Fra Start",
-        artist: "De Danske Hyrder"
-      },
-      {
-        rank: 4,
-        title: "10 Feet",
-        artist: "Phlake"
-      },
-      {
-        rank: 5,
-        title: "STOR MAND",
-        artist: "Tobias Rahim, andreas odbjerg"
-      },
-      {
-        rank: 6,
-        title: "Er Det For Sent?",
-        artist: "Josef, TopGunn"
-      },
-      {
-        rank: 7,
-        title: "Vi kommer aldrig att dö",
-        artist: "Bo Kaspers Orkester"
-      },
-      {
-        rank: 8,
-        title: "Crystal Silence",
-        artist: "Chick Corea"
-      },
-      {
-        rank: 9,
-        title: "Juice",
-        artist: "Blæst"
-      },
-      {
-        rank: 10,
-        title: "Soft & Hard",
-        artist: "Shy shy shy"
-      },
-      {
-        rank: 11,
-        title: "Snak Lidt Med Mig",
-        artist: "KESI"
-      },
-      {
-        rank: 12,
-        title: "Comes & Goes",
-        artist: "La Felix"
-      },
-      {
-        rank: 13,
-        title: "Fire in Your Eyes",
-        artist: "Willy Beaman, Brittany Foster"
-      }
+      { rank: 1, title: "2min (feat. Vera)", artist: "Phlake, Vera" },
+      { rank: 2, title: "hjem fra fabrikken", artist: "andreas odbjerg" },
+      { rank: 3, title: "Fra Start", artist: "De Danske Hyrder" },
+      { rank: 4, title: "10 Feet", artist: "Phlake" },
+      { rank: 5, title: "STOR MAND", artist: "Tobias Rahim, andreas odbjerg" }
     ]
   },
   {
     year: 2021,
-    dataType: "Favoritsange-data",
     minutes: null,
-    topGenre: null,
-    topArtist: "Phlake, Mercedes the Virus",
+    topArtist: "Phlake",
     topSong: "Aliens Need Love Too",
+    topGenre: null,
     topPodcast: null,
     topArtists: ["Phlake", "Mercedes the Virus", "P3", "Felix Sandman", "Astrid S"],
     songs: [
-      {
-        rank: 1,
-        title: "Aliens Need Love Too",
-        artist: "Phlake, Mercedes the Virus"
-      },
-      {
-        rank: 2,
-        title: "Lidt til Lægterne",
-        artist: "P3, Lidt til Lægterne"
-      },
-      {
-        rank: 3,
-        title: "RELATIONS",
-        artist: "Felix Sandman, Astrid S"
-      },
-      {
-        rank: 4,
-        title: "Over",
-        artist: "Aérotique, Tara Mobee"
-      },
-      {
-        rank: 5,
-        title: "Never Meant to Last",
-        artist: "Citna"
-      },
-      {
-        rank: 6,
-        title: "Hit and Run",
-        artist: "Goldbird, Dominic Neill"
-      },
-      {
-        rank: 7,
-        title: "Running - TELYKast Remix",
-        artist: "Arlissa, TELYKAST"
-      },
-      {
-        rank: 8,
-        title: "Dreaming All Night",
-        artist: "&around"
-      },
-      {
-        rank: 9,
-        title: "Anybody Else",
-        artist: "Moseqar"
-      },
-      {
-        rank: 10,
-        title: "Buongiorno",
-        artist: "KIDD"
-      },
-      {
-        rank: 11,
-        title: "Boy In The Picture",
-        artist: "Kid Crème, Jolyon Petch, Sian Evans"
-      },
-      {
-        rank: 12,
-        title: "Happiest Year",
-        artist: "Jaymes Young"
-      },
-      {
-        rank: 13,
-        title: "Somewhere over the Rainbow",
-        artist: "Hugo Rasmussen"
-      }
+      { rank: 1, title: "Aliens Need Love Too", artist: "Phlake, Mercedes the Virus" },
+      { rank: 2, title: "Lidt til Lægterne", artist: "P3, Lidt til Lægterne" },
+      { rank: 3, title: "RELATIONS", artist: "Felix Sandman, Astrid S" },
+      { rank: 4, title: "Over", artist: "Aérotique, Tara Mobee" },
+      { rank: 5, title: "Never Meant to Last", artist: "Citna" }
     ]
   },
   {
     year: 2020,
-    dataType: "Favoritsange-data",
     minutes: null,
-    topGenre: null,
-    topArtist: "Shalom Dubas, JAYDOT",
+    topArtist: "Shalom Dubas",
     topSong: "Something Like This",
+    topGenre: null,
     topPodcast: null,
     topArtists: ["Shalom Dubas", "JAYDOT", "Khalid", "andreas odbjerg", "Vera"],
     songs: [
-      {
-        rank: 1,
-        title: "Something Like This",
-        artist: "Shalom Dubas, JAYDOT"
-      },
-      {
-        rank: 2,
-        title: "Know Your Worth",
-        artist: "Khalid, Disclosure"
-      },
-      {
-        rank: 3,
-        title: "føler mig selv 100",
-        artist: "andreas odbjerg"
-      },
-      {
-        rank: 4,
-        title: "Antananarivo",
-        artist: "Vera"
-      },
-      {
-        rank: 5,
-        title: "All Around Me",
-        artist: "Justin Bieber"
-      },
-      {
-        rank: 6,
-        title: "Would It Be Ok",
-        artist: "AFSHEEN, Angel Taylor"
-      },
-      {
-        rank: 7,
-        title: "Slip Away",
-        artist: "Phlake, Mercedes the Virus"
-      },
-      {
-        rank: 8,
-        title: "better off - filous remix",
-        artist: "Jeremy Zucker, Chelsea Cutler, filous"
-      },
-      {
-        rank: 9,
-        title: "July",
-        artist: "Noah Cyrus"
-      },
-      {
-        rank: 10,
-        title: "Shot Down",
-        artist: "Khalid"
-      },
-      {
-        rank: 11,
-        title: "When You Were Mine",
-        artist: "Gill Chang, Cimo Fränkel"
-      },
-      {
-        rank: 12,
-        title: "Sunrise",
-        artist: "Norah Jones"
-      },
-      {
-        rank: 13,
-        title: "When Will I See You Again",
-        artist: "Shakka, Amtrac"
-      }
+      { rank: 1, title: "Something Like This", artist: "Shalom Dubas, JAYDOT" },
+      { rank: 2, title: "Know Your Worth", artist: "Khalid, Disclosure" },
+      { rank: 3, title: "føler mig selv 100", artist: "andreas odbjerg" },
+      { rank: 4, title: "Antananarivo", artist: "Vera" },
+      { rank: 5, title: "All Around Me", artist: "Justin Bieber" }
     ]
   },
   {
     year: 2019,
-    dataType: "Favoritsange-data",
     minutes: null,
-    topGenre: null,
     topArtist: "Mike Posner",
     topSong: "Move On",
+    topGenre: null,
     topPodcast: null,
     topArtists: ["Mike Posner", "Mickey", "Chris Brown", "Karl William", "Famous Yesterday"],
     songs: [
-      {
-        rank: 1,
-        title: "Move On",
-        artist: "Mike Posner"
-      },
-      {
-        rank: 2,
-        title: "Feel It",
-        artist: "Mickey, Theophilus London"
-      },
-      {
-        rank: 3,
-        title: "Undecided",
-        artist: "Chris Brown"
-      },
-      {
-        rank: 4,
-        title: "Selvom Du",
-        artist: "Karl William"
-      },
-      {
-        rank: 5,
-        title: "Make You",
-        artist: "Famous Yesterday"
-      },
-      {
-        rank: 6,
-        title: "Creep On Me",
-        artist: "GASHI, French Montana, DJ Snake"
-      },
-      {
-        rank: 7,
-        title: "Bad Timing",
-        artist: "Andrey Azizov, loren north"
-      },
-      {
-        rank: 8,
-        title: "Blank Marquee",
-        artist: "Yuna, G-Eazy"
-      },
-      {
-        rank: 9,
-        title: "How Do You Sleep?",
-        artist: "Sam Smith"
-      },
-      {
-        rank: 10,
-        title: "Cross Me",
-        artist: "Ed Sheeran, Chance the Rapper, PnB Rock"
-      },
-      {
-        rank: 11,
-        title: "Aliv3",
-        artist: "Kings"
-      },
-      {
-        rank: 12,
-        title: "Carry On",
-        artist: "Kygo, Rita Ora"
-      },
-      {
-        rank: 13,
-        title: "Old School Love",
-        artist: "NEIKED, Nirob Islam"
-      }
+      { rank: 1, title: "Move On", artist: "Mike Posner" },
+      { rank: 2, title: "Feel It", artist: "Mickey, Theophilus London" },
+      { rank: 3, title: "Undecided", artist: "Chris Brown" },
+      { rank: 4, title: "Selvom Du", artist: "Karl William" },
+      { rank: 5, title: "Make You", artist: "Famous Yesterday" }
     ]
   },
   {
     year: 2018,
-    dataType: "Favoritsange-data",
     minutes: null,
-    topGenre: null,
     topArtist: "Phlake",
     topSong: "New Slow",
+    topGenre: null,
     topPodcast: null,
     topArtists: ["Phlake", "Frank Ocean", "Calvin Harris", "Drake", "KESI"],
     songs: [
-      {
-        rank: 1,
-        title: "New Slow",
-        artist: "Phlake"
-      },
-      {
-        rank: 2,
-        title: "Moon River",
-        artist: "Frank Ocean"
-      },
-      {
-        rank: 3,
-        title: "Promises",
-        artist: "Calvin Harris, Sam Smith, Jessie Reyez"
-      },
-      {
-        rank: 4,
-        title: "Don’t Matter To Me",
-        artist: "Drake, Michael Jackson"
-      },
-      {
-        rank: 5,
-        title: "Kom Over",
-        artist: "KESI"
-      },
-      {
-        rank: 6,
-        title: "Let's Go",
-        artist: "Khalid"
-      },
-      {
-        rank: 7,
-        title: "Told You So",
-        artist: "Miguel"
-      },
-      {
-        rank: 8,
-        title: "Rich & Sad",
-        artist: "Post Malone"
-      },
-      {
-        rank: 9,
-        title: "Finesse - Remix",
-        artist: "Bruno Mars, Cardi B"
-      },
-      {
-        rank: 10,
-        title: "Don't Let Me Be Yours",
-        artist: "Zara Larsson"
-      },
-      {
-        rank: 11,
-        title: "Stoned",
-        artist: "Blondage"
-      },
-      {
-        rank: 12,
-        title: "Thunderclouds",
-        artist: "Sia, Diplo, Labrinth, LSD"
-      },
-      {
-        rank: 13,
-        title: "Frisk Igen",
-        artist: "Dusin"
-      }
+      { rank: 1, title: "New Slow", artist: "Phlake" },
+      { rank: 2, title: "Moon River", artist: "Frank Ocean" },
+      { rank: 3, title: "Promises", artist: "Calvin Harris, Sam Smith, Jessie Reyez" },
+      { rank: 4, title: "Don’t Matter To Me", artist: "Drake, Michael Jackson" },
+      { rank: 5, title: "Kom Over", artist: "KESI" }
     ]
   },
   {
     year: 2017,
-    dataType: "Favoritsange-data",
     minutes: null,
-    topGenre: null,
     topArtist: "Moses: Andreas",
     topSong: "Gazeller",
+    topGenre: null,
     topPodcast: null,
     topArtists: ["Moses: Andreas", "Fie Laursen", "Frank Ocean", "Lorde", "Francis and the Lights"],
     songs: [
-      {
-        rank: 1,
-        title: "Gazeller",
-        artist: "Moses: Andreas"
-      },
-      {
-        rank: 2,
-        title: "Justin",
-        artist: "Fie Laursen"
-      },
-      {
-        rank: 3,
-        title: "Biking",
-        artist: "Frank Ocean, JAY-Z, Tyler, The Creator"
-      },
-      {
-        rank: 4,
-        title: "Green Light",
-        artist: "Lorde"
-      },
-      {
-        rank: 5,
-        title: "May I Have This Dance",
-        artist: "Francis and the Lights, Chance the Rapper"
-      },
-      {
-        rank: 6,
-        title: "Ouch",
-        artist: "Phlake"
-      },
-      {
-        rank: 7,
-        title: "On Hold",
-        artist: "The xx"
-      },
-      {
-        rank: 8,
-        title: "I'm the One",
-        artist: "DJ Khaled, Justin Bieber, Quavo, Chance the Rapper, Lil Wayne"
-      },
-      {
-        rank: 9,
-        title: "Last Cigarette",
-        artist: "kennedi"
-      },
-      {
-        rank: 10,
-        title: "Slide",
-        artist: "Calvin Harris, Frank Ocean, Migos"
-      },
-      {
-        rank: 11,
-        title: "Such A Boy",
-        artist: "Astrid S"
-      },
-      {
-        rank: 12,
-        title: "Galway Girl",
-        artist: "Ed Sheeran, Martin Jensen"
-      },
-      {
-        rank: 13,
-        title: "Reflection",
-        artist: "Scarlet Pleasure"
-      }
+      { rank: 1, title: "Gazeller", artist: "Moses: Andreas" },
+      { rank: 2, title: "Justin", artist: "Fie Laursen" },
+      { rank: 3, title: "Biking", artist: "Frank Ocean, JAY-Z, Tyler, The Creator" },
+      { rank: 4, title: "Green Light", artist: "Lorde" },
+      { rank: 5, title: "May I Have This Dance", artist: "Francis and the Lights, Chance the Rapper" }
     ]
   }
 ];
 
-const spotifyLinks = {
+const mediaAssets = {
   artists: {
-    "phlake": "https://open.spotify.com/artist/7xSP5ABX7IOegINeUtUVay",
-    "mike posner": "https://open.spotify.com/artist/2KsP6tYLJlTBvSUxnwlVWa",
-    "wads": "https://open.spotify.com/artist/6MrX2ndZBm5xqWGTX26X2M",
-    "stig rossen": "https://open.spotify.com/artist/2z8iTQwzBF1lbIN2oUkdIP",
-    "khalid": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny",
-    "frank ocean": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM",
-    "dua lipa": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we",
-    "calvin harris": "https://open.spotify.com/artist/7CajNmpbOovFoOoasH2HaY",
-    "drake": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4",
-    "kesi": "https://open.spotify.com/artist/0nLYXiUznRjvmr33tncX5P",
-    "andreas odbjerg": "https://open.spotify.com/artist/6Jv3eaCuH7gyn1fUZeO3ky",
-    "tobias rahim": "https://open.spotify.com/artist/7Fss3mTh5WbeO0mPq8m66B"
+    "phlake": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174ca562d7b2a59652b2669433f",
+    "mike posner": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051747adb9b4f4a089a65b069e6b9",
+    "wads": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174e7fe2c360e75de8f3610dbf3",
+    "stig rossen": "https://i.scdn.co/image/981806636aae9d50937955ea70d7229accdf78e6",
+    "khalid": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748f77c3eddc1869e9542b04bc",
+    "maria lucia": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517421484cabe4d7d51094f53e2f",
+    "calvin harris": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748ebba5e60113b48de8c11f6b"
   },
-  tracks: {
-    "come here": "https://open.spotify.com/track/63ms88HVjrxc1gwx4bzrmO",
-    "menneskesøn": "https://open.spotify.com/track/5G4c6rStzocM8pEsC0Rrjv",
-    "krumme's sang": "https://open.spotify.com/track/0yjCA5KufU4OQP6VaG6nRI",
-    "new slow": "https://open.spotify.com/track/2G4YftYeP6Q0TJzLEKcxpC",
-    "move on": "https://open.spotify.com/track/1zF0BxtBzdIYTBm2L4tULk"
+  covers: {
+    "come here": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0285c51103eb43960b1a74aced",
+    "beast": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02540c73c8616fec8fc10b4c9b",
+    "under the influence": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02229f0e3ce1eab83d5a8befb0",
+    "lad det ske - fra frost": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0271a8b284ffc0da29d030cb0f",
+    "jukeboxx": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0285b2c230c0ae2a5b8b748fa2",
+    "krumme's sang": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0255d62964be0d91d3d3ba0201",
+    "menneskesøn": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e023417c2e639b79f4a7c0fa905",
+    "10 feet (feat. gorgeous)": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02bbf9d3419bd072d7c2483fbe",
+    "new slow": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02f6ebbdaf7e16444d10c4e84d",
+    "move on": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02be8cf76330e4c079fd2c40e6"
   }
 };
 
 let selectedYear = 2025;
 let minutesChart;
-const imageCache = new Map();
 
 const formatNumber = (value) => new Intl.NumberFormat("da-DK").format(value);
 
@@ -773,110 +197,62 @@ function getSelectedData() {
   return archiveData.find((item) => item.year === Number(selectedYear)) || archiveData[0];
 }
 
-function getArtistSpotifyUrl(name) {
-  return spotifyLinks.artists[normalize(name)] || "";
+function getImage(type, key) {
+  return mediaAssets[type][normalize(key)] || "";
 }
 
-function getTrackSpotifyUrl(title) {
-  return spotifyLinks.tracks[normalize(title)] || "";
-}
-
-async function getSpotifyThumbnail(spotifyUrl) {
-  if (!spotifyUrl) return "";
-
-  if (imageCache.has(spotifyUrl)) {
-    return imageCache.get(spotifyUrl);
-  }
-
-  try {
-    const endpoint = `https://open.spotify.com/oembed?url=${encodeURIComponent(spotifyUrl)}`;
-    const response = await fetch(endpoint);
-    const data = await response.json();
-    const thumbnail = data.thumbnail_url || "";
-    imageCache.set(spotifyUrl, thumbnail);
-    return thumbnail;
-  } catch (error) {
-    imageCache.set(spotifyUrl, "");
-    return "";
-  }
-}
-
-async function hydrateSpotifyImages() {
-  const artistElements = Array.from(document.querySelectorAll("[data-spotify-artist-url]"));
-  const trackElements = Array.from(document.querySelectorAll("[data-spotify-track-url]"));
-
-  await Promise.all([
-    ...artistElements.map(async (element) => {
-      const url = element.dataset.spotifyArtistUrl;
-      const name = element.dataset.name;
-      const thumbnail = await getSpotifyThumbnail(url);
-
-      if (thumbnail) {
-        element.innerHTML = `<img src="${thumbnail}" alt="${name}" loading="lazy" />`;
-      }
-    }),
-    ...trackElements.map(async (element) => {
-      const url = element.dataset.spotifyTrackUrl;
-      const title = element.dataset.title;
-      const thumbnail = await getSpotifyThumbnail(url);
-
-      if (thumbnail) {
-        element.innerHTML = `<img src="${thumbnail}" alt="${title}" loading="lazy" />`;
-      }
-    })
-  ]);
-}
-
-function createAvatar(name) {
-  const spotifyUrl = getArtistSpotifyUrl(name);
-
+function avatar(name) {
+  const src = getImage("artists", name);
   return `
-    <div class="avatar" title="${name}" data-name="${name}" data-spotify-artist-url="${spotifyUrl}">
-      ${getInitials(name)}
+    <div class="avatar" title="${name}">
+      ${
+        src
+          ? `<img src="${src}" alt="${name}" loading="lazy" onerror="this.remove(); this.parentElement.textContent='${getInitials(name)}';" />`
+          : getInitials(name)
+      }
     </div>
   `;
 }
 
-function createCover(song) {
-  const spotifyUrl = song.spotifyUrl || getTrackSpotifyUrl(song.title);
-
+function cover(song) {
+  const src = getImage("covers", song.title);
   return `
-    <div class="cover" title="${song.title}" data-title="${song.title}" data-spotify-track-url="${spotifyUrl}">
-      ${getInitials(song.title)}
+    <div class="cover" title="${song.title}">
+      ${
+        src
+          ? `<img src="${src}" alt="${song.title}" loading="lazy" onerror="this.remove(); this.parentElement.textContent='${getInitials(song.title)}';" />`
+          : getInitials(song.title)
+      }
     </div>
   `;
 }
 
-function updateFeature() {
+function updateOverview() {
   const item = getSelectedData();
 
-  document.getElementById("selectedYearTitle").textContent = item.year;
-  document.getElementById("selectedYearType").textContent = item.dataType;
-  document.getElementById("featureTopSong").textContent = item.topSong || "Ikke oplyst";
-  document.getElementById("featureTopArtist").textContent = item.topArtist || "Ikke oplyst";
-  document.getElementById("featureGenre").textContent = item.topGenre || item.podcastTopic || "Ikke oplyst";
-  document.getElementById("featureMinutes").textContent =
+  document.getElementById("currentYear").textContent = item.year;
+  document.getElementById("metricArtist").textContent = item.topArtist || "Ikke oplyst";
+  document.getElementById("metricSong").textContent = item.topSong || "Ikke oplyst";
+  document.getElementById("metricGenre").textContent = item.topGenre || "Ikke oplyst";
+  document.getElementById("metricMinutes").textContent =
     typeof item.minutes === "number" ? formatNumber(item.minutes) : "Ikke oplyst";
 
-  document.getElementById("artistSectionTitle").textContent = item.year;
-  document.getElementById("songSectionTitle").textContent = item.year;
+  document.getElementById("artistsTitle").textContent = item.year;
+  document.getElementById("songsTitle").textContent = item.year;
 }
 
 function renderTopArtists() {
   const item = getSelectedData();
-  const artists = item.topArtists && item.topArtists.length
-    ? item.topArtists
-    : item.songs.slice(0, 5).map((song) => getPrimaryArtist(song.artist));
 
-  document.getElementById("topArtists").innerHTML = artists.slice(0, 5).map((artist, index) => `
-    <div class="artist-row">
-      <div class="rank">#${index + 1}</div>
-      ${createAvatar(artist)}
+  document.getElementById("artistList").innerHTML = item.topArtists.slice(0, 5).map((artist, index) => `
+    <div class="rank-row">
+      <div class="rank">${index + 1}</div>
+      ${avatar(artist)}
       <div>
         <div class="item-title">${artist}</div>
         <div class="item-subtitle">${item.year}</div>
       </div>
-      <div class="year-chip">${item.year}</div>
+      <div class="year-pill">${item.year}</div>
     </div>
   `).join("");
 }
@@ -884,131 +260,48 @@ function renderTopArtists() {
 function renderTopSongs() {
   const item = getSelectedData();
 
-  document.getElementById("topSongs").innerHTML = item.songs.slice(0, 5).map((song) => `
-    <div class="song-row">
-      <div class="rank">#${song.rank}</div>
-      ${createCover(song)}
+  document.getElementById("songList").innerHTML = item.songs.slice(0, 5).map((song) => `
+    <div class="rank-row">
+      <div class="rank">${song.rank}</div>
+      ${cover(song)}
       <div>
         <div class="item-title">${song.title}</div>
         <div class="item-subtitle">${song.artist}</div>
       </div>
+      <div class="minutes-pill">${song.minutes ? `${song.minutes} min` : ""}</div>
     </div>
-  `).join("");
-}
-
-function getArtistOccurrences() {
-  const map = new Map();
-
-  archiveData.forEach((yearData) => {
-    yearData.songs.forEach((song) => {
-      const primary = getPrimaryArtist(song.artist);
-      const key = normalize(primary);
-
-      if (!map.has(key)) {
-        map.set(key, {
-          name: primary,
-          years: new Set(),
-          ranks: [],
-          songs: []
-        });
-      }
-
-      const entry = map.get(key);
-      entry.years.add(yearData.year);
-      entry.ranks.push(song.rank);
-      entry.songs.push(song.title);
-    });
-  });
-
-  return Array.from(map.values())
-    .map((entry) => ({
-      ...entry,
-      years: Array.from(entry.years).sort((a, b) => b - a)
-    }))
-    .filter((entry) => entry.years.length > 1 || entry.ranks.length > 2)
-    .sort((a, b) => b.years.length - a.years.length || Math.min(...a.ranks) - Math.min(...b.ranks));
-}
-
-function getSongOccurrences() {
-  const map = new Map();
-
-  archiveData.forEach((yearData) => {
-    yearData.songs.forEach((song) => {
-      const key = normalize(song.title);
-
-      if (!map.has(key)) {
-        map.set(key, {
-          title: song.title,
-          artists: new Set(),
-          years: new Set(),
-          ranks: []
-        });
-      }
-
-      const entry = map.get(key);
-      entry.artists.add(song.artist);
-      entry.years.add(yearData.year);
-      entry.ranks.push(song.rank);
-    });
-  });
-
-  return Array.from(map.values())
-    .map((entry) => ({
-      ...entry,
-      artists: Array.from(entry.artists),
-      years: Array.from(entry.years).sort((a, b) => b - a)
-    }))
-    .filter((entry) => entry.years.length > 1)
-    .sort((a, b) => b.years.length - a.years.length || Math.min(...a.ranks) - Math.min(...b.ranks));
-}
-
-function renderRepeatArtists() {
-  const artists = getArtistOccurrences().slice(0, 6);
-
-  document.getElementById("repeatArtists").innerHTML = artists.map((entry) => `
-    <article class="repeat-card">
-      <h3>${entry.name}</h3>
-      <div class="badges">
-        ${entry.years.map((year) => `<span class="badge">${year}</span>`).join("")}
-      </div>
-      <p class="muted">${entry.years.length} år · ${entry.ranks.length} placeringer</p>
-    </article>
-  `).join("");
-}
-
-function renderRepeatSongs() {
-  const songs = getSongOccurrences().slice(0, 6);
-
-  document.getElementById("repeatSongs").innerHTML = songs.map((entry) => `
-    <article class="repeat-card">
-      <h3>${entry.title}</h3>
-      <div class="badges">
-        ${entry.years.map((year) => `<span class="badge">${year}</span>`).join("")}
-      </div>
-      <p class="muted">${entry.artists[0]}</p>
-    </article>
   `).join("");
 }
 
 function renderYearCards() {
   document.getElementById("yearCards").innerHTML = archiveData.map((item) => `
     <article class="year-card ${Number(selectedYear) === item.year ? "selected" : ""}" data-year="${item.year}">
-      <div class="year">${item.year}</div>
-      <dl>
+      <div class="year-card-top">
         <div>
-          <dt>#1-sang</dt>
-          <dd>${item.topSong || "Ikke oplyst"}</dd>
+          <p class="section-label">${item.minutes ? "Wrapped" : "Top songs"}</p>
+          <div class="year-card-year">${item.year}</div>
         </div>
-        <div>
-          <dt>#1-kunstner</dt>
-          <dd>${item.topArtist || "Ikke oplyst"}</dd>
+        <div class="year-card-meta">
+          <span>${item.topArtist || "Ikke oplyst"}</span>
+          <span>${item.topGenre || "Favoritsange-data"}</span>
+          <span>${item.minutes ? `${formatNumber(item.minutes)} min` : "Minutter ikke oplyst"}</span>
         </div>
-        <div>
-          <dt>Genre/emne</dt>
-          <dd>${item.topGenre || item.podcastTopic || "Ikke oplyst"}</dd>
+      </div>
+
+      <div class="year-card-bottom">
+        <div class="year-mini-row">
+          <span>Sang</span>
+          <strong>${item.topSong || "Ikke oplyst"}</strong>
         </div>
-      </dl>
-      <span class="data-type">${item.dataType}</span>
+        <div class="year-mini-row">
+          <span>Genre</span>
+          <strong>${item.topGenre || "Ikke oplyst"}</strong>
+        </div>
+        <div class="year-mini-row">
+          <span>Podcast</span>
+          <strong>${item.topPodcast || "Ikke oplyst"}</strong>
+        </div>
+      </div>
     </article>
   `).join("");
 
@@ -1022,21 +315,119 @@ function renderYearCards() {
   });
 }
 
-function renderWrappedCards() {
-  const wrapped = archiveData.filter((item) => item.dataType.includes("Wrapped"));
+function getArtistRank(yearData, artistName) {
+  const primaryArtists = yearData.topArtists.map((artist) => normalize(getPrimaryArtist(artist)));
+  const rank = primaryArtists.indexOf(normalize(artistName)) + 1;
+  return rank || null;
+}
 
-  document.getElementById("wrappedCards").innerHTML = wrapped.map((item) => `
-    <div class="wrapped-item">
-      <div class="wrapped-year">${item.year}</div>
-      <div>
-        <span>${item.dataType}</span>
-        <strong>${typeof item.minutes === "number" ? `${formatNumber(item.minutes)} min.` : "Minutter ikke oplyst"}</strong>
-        <p class="muted">
-          ${item.topArtist ? `Topkunstner: ${item.topArtist}` : ""}
-          ${item.topPodcast ? ` · Toppodcast: ${item.topPodcast}` : ""}
-        </p>
-      </div>
+function renderHeatmap() {
+  const artists = ["Phlake", "Stig Rossen", "Wads", "Mike Posner", "Khalid"];
+  const years = archiveData.map((item) => item.year);
+
+  const header = `
+    <div class="heatmap-row">
+      <div class="heatmap-head">År</div>
+      ${artists.map((artist) => `<div class="heatmap-head">${artist}</div>`).join("")}
     </div>
+  `;
+
+  const rows = years.map((year) => {
+    const yearData = archiveData.find((item) => item.year === year);
+
+    return `
+      <div class="heatmap-row">
+        <div class="heatmap-year">${year}</div>
+        ${artists.map((artist) => {
+          const rank = getArtistRank(yearData, artist);
+
+          if (!rank) {
+            return `<div class="heatmap-cell empty">—</div>`;
+          }
+
+          const intensity = rank === 1 ? 0.95 : rank === 2 ? 0.72 : rank === 3 ? 0.55 : 0.38;
+          return `<div class="heatmap-cell" style="--intensity: ${intensity}">#${rank}</div>`;
+        }).join("")}
+      </div>
+    `;
+  }).join("");
+
+  document.getElementById("artistHeatmap").innerHTML = `<div class="heatmap-table">${header}${rows}</div>`;
+}
+
+function getArtistOccurrences() {
+  const map = new Map();
+
+  archiveData.forEach((yearData) => {
+    yearData.topArtists.forEach((artist, index) => {
+      const key = normalize(getPrimaryArtist(artist));
+
+      if (!map.has(key)) {
+        map.set(key, {
+          name: getPrimaryArtist(artist),
+          years: [],
+          ranks: []
+        });
+      }
+
+      map.get(key).years.push(yearData.year);
+      map.get(key).ranks.push(index + 1);
+    });
+  });
+
+  return Array.from(map.values())
+    .filter((item) => item.years.length > 1)
+    .sort((a, b) => b.years.length - a.years.length || Math.min(...a.ranks) - Math.min(...b.ranks));
+}
+
+function getSongOccurrences() {
+  const map = new Map();
+
+  archiveData.forEach((yearData) => {
+    yearData.songs.forEach((song) => {
+      const key = normalize(song.title);
+
+      if (!map.has(key)) {
+        map.set(key, {
+          title: song.title,
+          artist: song.artist,
+          years: [],
+          ranks: []
+        });
+      }
+
+      map.get(key).years.push(yearData.year);
+      map.get(key).ranks.push(song.rank);
+    });
+  });
+
+  return Array.from(map.values())
+    .filter((item) => item.years.length > 1)
+    .sort((a, b) => b.years.length - a.years.length || Math.min(...a.ranks) - Math.min(...b.ranks));
+}
+
+function renderRepeats() {
+  const artists = getArtistOccurrences().slice(0, 5);
+  const songs = getSongOccurrences().slice(0, 5);
+
+  document.getElementById("repeatArtists").innerHTML = artists.map((item) => `
+    <article class="repeat-card">
+      <h3>${item.name}</h3>
+      <div class="badges">
+        ${item.years.map((year) => `<span class="badge">${year}</span>`).join("")}
+      </div>
+      <p class="repeat-note">${item.years.length} år i top 5</p>
+    </article>
+  `).join("");
+
+  document.getElementById("repeatSongs").innerHTML = songs.map((item) => `
+    <article class="repeat-card">
+      <h3>${item.title}</h3>
+      <div class="badges">
+        ${item.years.map((year) => `<span class="badge">${year}</span>`).join("")}
+      </div>
+      <p class="repeat-note">${item.artist}</p>
+    </article>
   `).join("");
 }
 
@@ -1051,56 +442,47 @@ function renderCompareControls() {
   fromSelect.value = "2024";
   toSelect.value = "2025";
 
-  fromSelect.addEventListener("change", renderCompareCards);
-  toSelect.addEventListener("change", renderCompareCards);
-
-  renderCompareCards();
+  fromSelect.addEventListener("change", renderCompare);
+  toSelect.addEventListener("change", renderCompare);
 }
 
-function renderCompareCards() {
-  const fromYear = Number(document.getElementById("fromYear").value);
-  const toYear = Number(document.getElementById("toYear").value);
-  const from = archiveData.find((item) => item.year === fromYear);
-  const to = archiveData.find((item) => item.year === toYear);
+function renderCompare() {
+  const from = archiveData.find((item) => item.year === Number(document.getElementById("fromYear").value));
+  const to = archiveData.find((item) => item.year === Number(document.getElementById("toYear").value));
 
-  const minuteValue =
+  const minuteDiff =
     typeof from.minutes === "number" && typeof to.minutes === "number"
-      ? `${to.minutes - from.minutes >= 0 ? "+" : ""}${formatNumber(to.minutes - from.minutes)}`
-      : "Ikke sammenligneligt";
+      ? to.minutes - from.minutes
+      : null;
 
   const cards = [
     {
-      title: "Minutter",
-      old: `${from.year}: ${typeof from.minutes === "number" ? formatNumber(from.minutes) : "Ikke oplyst"}`,
-      value: minuteValue,
-      next: `${to.year}: ${typeof to.minutes === "number" ? formatNumber(to.minutes) : "Ikke oplyst"}`
+      label: "Minutter",
+      main: minuteDiff === null ? "Ikke sammenligneligt" : `${minuteDiff >= 0 ? "+" : ""}${formatNumber(minuteDiff)}`,
+      sub: `${from.year}: ${from.minutes ? formatNumber(from.minutes) : "—"} → ${to.year}: ${to.minutes ? formatNumber(to.minutes) : "—"}`
     },
     {
-      title: "#1-sang",
-      old: `${from.year}: ${from.topSong || "Ikke oplyst"}`,
-      value: from.topSong === to.topSong ? "Samme" : "Skift",
-      next: `${to.year}: ${to.topSong || "Ikke oplyst"}`
+      label: "#1-kunstner",
+      main: from.topArtist === to.topArtist ? "Uændret" : "Skift",
+      sub: `${from.topArtist || "—"} → ${to.topArtist || "—"}`
     },
     {
-      title: "#1-kunstner",
-      old: `${from.year}: ${from.topArtist || "Ikke oplyst"}`,
-      value: from.topArtist === to.topArtist ? "Samme" : "Skift",
-      next: `${to.year}: ${to.topArtist || "Ikke oplyst"}`
+      label: "Topsang",
+      main: from.topSong === to.topSong ? "Uændret" : "Skift",
+      sub: `${from.topSong || "—"} → ${to.topSong || "—"}`
     },
     {
-      title: "Genre/emne",
-      old: `${from.year}: ${from.topGenre || from.podcastTopic || "Ikke oplyst"}`,
-      value: (from.topGenre || from.podcastTopic) === (to.topGenre || to.podcastTopic) ? "Samme" : "Ændret",
-      next: `${to.year}: ${to.topGenre || to.podcastTopic || "Ikke oplyst"}`
+      label: "Topgenre",
+      main: (from.topGenre || "—") === (to.topGenre || "—") ? "Uændret" : "Ændret",
+      sub: `${from.topGenre || "—"} → ${to.topGenre || "—"}`
     }
   ];
 
   document.getElementById("compareCards").innerHTML = cards.map((card) => `
     <article class="compare-card">
-      <p class="section-label">${card.title}</p>
-      <p class="old">${card.old}</p>
-      <div class="value">${card.value}</div>
-      <p class="old">${card.next}</p>
+      <span>${card.label}</span>
+      <div class="compare-main">${card.main}</div>
+      <div class="compare-sub">${card.sub}</div>
     </article>
   `).join("");
 }
@@ -1111,17 +493,19 @@ function renderMinutesChart() {
     .filter((item) => typeof item.minutes === "number")
     .sort((a, b) => a.year - b.year);
 
-  if (minutesChart) minutesChart.destroy();
+  if (minutesChart) {
+    minutesChart.destroy();
+  }
 
   minutesChart = new Chart(ctx, {
     type: "line",
     data: {
       labels: data.map((item) => item.year),
       datasets: [{
-        label: "Wrapped-minutter",
+        label: "Minutter",
         data: data.map((item) => item.minutes),
         borderColor: "#1ed760",
-        backgroundColor: "rgba(30, 215, 96, 0.18)",
+        backgroundColor: "rgba(30, 215, 96, 0.16)",
         fill: true,
         tension: 0.35,
         pointRadius: 6,
@@ -1138,26 +522,26 @@ function renderMinutesChart() {
       plugins: {
         legend: {
           labels: {
-            color: "rgba(255,255,255,0.75)",
+            color: "rgba(246,255,248,0.72)",
             boxWidth: 12,
             boxHeight: 12
           }
         },
         tooltip: {
-          backgroundColor: "#101719",
+          backgroundColor: "#06120c",
           titleColor: "#fff",
           bodyColor: "#fff",
-          borderColor: "rgba(255,255,255,0.12)",
+          borderColor: "rgba(30,215,96,0.25)",
           borderWidth: 1
         }
       },
       scales: {
         x: {
-          ticks: { color: "rgba(255,255,255,0.65)" },
+          ticks: { color: "rgba(246,255,248,0.6)" },
           grid: { color: "rgba(255,255,255,0.05)" }
         },
         y: {
-          ticks: { color: "rgba(255,255,255,0.65)" },
+          ticks: { color: "rgba(246,255,248,0.6)" },
           grid: { color: "rgba(255,255,255,0.05)" }
         }
       }
@@ -1176,9 +560,10 @@ function setupYearFilter() {
     button.addEventListener("click", () => {
       if (button.dataset.year === "all") {
         selectedYear = 2025;
-        window.location.hash = "#yearCards";
+        document.getElementById("years").scrollIntoView({ behavior: "smooth" });
       } else {
         selectedYear = Number(button.dataset.year);
+        window.scrollTo({ top: 0, behavior: "smooth" });
       }
 
       setActiveYearButton();
@@ -1188,16 +573,14 @@ function setupYearFilter() {
 }
 
 function renderAll() {
-  updateFeature();
+  updateOverview();
   renderTopArtists();
   renderTopSongs();
-  renderRepeatArtists();
-  renderRepeatSongs();
   renderYearCards();
-  renderWrappedCards();
-  renderCompareCards();
+  renderHeatmap();
+  renderRepeats();
+  renderCompare();
   renderMinutesChart();
-  hydrateSpotifyImages();
 }
 
 setupYearFilter();
