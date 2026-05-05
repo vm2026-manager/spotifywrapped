@@ -9,20 +9,77 @@ const archiveData = [
     topPodcast: null,
     topArtists: ["Phlake", "Mike Posner", "Wads", "Stig Rossen", "Khalid"],
     songs: [
-      { rank: 1, title: "come here", artist: "Wads" },
-      { rank: 2, title: "beast", artist: "Wads" },
-      { rank: 3, title: "Under The Influence", artist: "ORA" },
-      { rank: 4, title: "Lad Det Ske - Fra Frost", artist: "Maria Lucia" },
-      { rank: 5, title: "jukeboxx", artist: "Wads" },
-      { rank: 6, title: "Menneskesøn", artist: "Stig Rossen" },
-      { rank: 7, title: "Howling at the Moon", artist: "Mike Posner, salem ilese" },
-      { rank: 8, title: "time machine", artist: "Wads" },
-      { rank: 9, title: "Jeg er på vej", artist: "Stig Rossen, Jamie Morton" },
-      { rank: 10, title: "Jeg Ka' Rigtig Godt Li' Dig", artist: "Ida Laurberg, andreas odbjerg" },
-      { rank: 11, title: "Jeg Vil Ha' En Baby", artist: "Anne-Grethe Bjarup Riis, Anders W. Berthelsen" },
-      { rank: 12, title: "Let It Go", artist: "NOTSOBAD, MA:RK" },
-      { rank: 13, title: "10 Feet (feat. Gorgeous)", artist: "Phlake, Gorgeous" },
-      { rank: 14, title: "WACUKA", artist: "AVAION, Sofiya Nzau" }
+      {
+        rank: 1,
+        title: "come here",
+        artist: "Wads",
+        spotifyUrl: "https://open.spotify.com/track/63ms88HVjrxc1gwx4bzrmO"
+      },
+      {
+        rank: 2,
+        title: "beast",
+        artist: "Wads"
+      },
+      {
+        rank: 3,
+        title: "Under The Influence",
+        artist: "ORA"
+      },
+      {
+        rank: 4,
+        title: "Lad Det Ske - Fra Frost",
+        artist: "Maria Lucia"
+      },
+      {
+        rank: 5,
+        title: "jukeboxx",
+        artist: "Wads"
+      },
+      {
+        rank: 6,
+        title: "Menneskesøn",
+        artist: "Stig Rossen"
+      },
+      {
+        rank: 7,
+        title: "Howling at the Moon",
+        artist: "Mike Posner, salem ilese"
+      },
+      {
+        rank: 8,
+        title: "time machine",
+        artist: "Wads"
+      },
+      {
+        rank: 9,
+        title: "Jeg er på vej",
+        artist: "Stig Rossen, Jamie Morton"
+      },
+      {
+        rank: 10,
+        title: "Jeg Ka' Rigtig Godt Li' Dig",
+        artist: "Ida Laurberg, andreas odbjerg"
+      },
+      {
+        rank: 11,
+        title: "Jeg Vil Ha' En Baby",
+        artist: "Anne-Grethe Bjarup Riis, Anders W. Berthelsen"
+      },
+      {
+        rank: 12,
+        title: "Let It Go",
+        artist: "NOTSOBAD, MA:RK"
+      },
+      {
+        rank: 13,
+        title: "10 Feet (feat. Gorgeous)",
+        artist: "Phlake, Gorgeous"
+      },
+      {
+        rank: 14,
+        title: "WACUKA",
+        artist: "AVAION, Sofiya Nzau"
+      }
     ]
   },
   {
@@ -46,20 +103,76 @@ const archiveData = [
     topArtists: ["Phlake", "Stig Rossen", "Mercedes the Virus", "Laus Høybye", "ZOO Børneklub"],
     topPodcasts: ["Mediano", "Støt Mediano", "Q&CO på B.T.", "Godnathistorier For Børn - Bamsen Geo", "Third Ear"],
     songs: [
-      { rank: 1, title: "Krumme's Sang", artist: "Laus Høybye, Krummerne" },
-      { rank: 2, title: "Menneskesøn", artist: "Stig Rossen" },
-      { rank: 3, title: "Jeg Vil Ha' En Baby", artist: "Anne-Grethe Bjarup Riis, Anders W. Berthelsen" },
-      { rank: 4, title: "10 Feet (feat. Gorgeous)", artist: "Phlake, Gorgeous" },
-      { rank: 5, title: "Jeg er på vej", artist: "Stig Rossen, Jamie Morton" },
-      { rank: 6, title: "Kom Ud", artist: "Kaya Brüel, Troels Lyby" },
-      { rank: 7, title: "Pelle og Kaya", artist: "ZOO Børneklub" },
-      { rank: 8, title: "Aliens Need Love Too", artist: "Phlake, Mercedes the Virus" },
-      { rank: 9, title: "Fremmed som mig", artist: "Stig Rossen" },
-      { rank: 10, title: "Pink + White", artist: "Frank Ocean" },
-      { rank: 11, title: "Jeg Vil Finde Vej", artist: "Laus Høybye" },
-      { rank: 12, title: "T.I.D.O.Y.S.", artist: "Phlake, Mercedes the Virus" },
-      { rank: 13, title: "Sommersangen", artist: "ZOO Børneklub" },
-      { rank: 14, title: "Jeg bli’r meget snart majestæt", artist: "Andreas Hviid, Amalie Alstrup, Peter Zhelder" }
+      {
+        rank: 1,
+        title: "Krumme's Sang",
+        artist: "Laus Høybye, Krummerne"
+      },
+      {
+        rank: 2,
+        title: "Menneskesøn",
+        artist: "Stig Rossen"
+      },
+      {
+        rank: 3,
+        title: "Jeg Vil Ha' En Baby",
+        artist: "Anne-Grethe Bjarup Riis, Anders W. Berthelsen"
+      },
+      {
+        rank: 4,
+        title: "10 Feet (feat. Gorgeous)",
+        artist: "Phlake, Gorgeous"
+      },
+      {
+        rank: 5,
+        title: "Jeg er på vej",
+        artist: "Stig Rossen, Jamie Morton"
+      },
+      {
+        rank: 6,
+        title: "Kom Ud",
+        artist: "Kaya Brüel, Troels Lyby"
+      },
+      {
+        rank: 7,
+        title: "Pelle og Kaya",
+        artist: "ZOO Børneklub"
+      },
+      {
+        rank: 8,
+        title: "Aliens Need Love Too",
+        artist: "Phlake, Mercedes the Virus"
+      },
+      {
+        rank: 9,
+        title: "Fremmed som mig",
+        artist: "Stig Rossen"
+      },
+      {
+        rank: 10,
+        title: "Pink + White",
+        artist: "Frank Ocean"
+      },
+      {
+        rank: 11,
+        title: "Jeg Vil Finde Vej",
+        artist: "Laus Høybye"
+      },
+      {
+        rank: 12,
+        title: "T.I.D.O.Y.S.",
+        artist: "Phlake, Mercedes the Virus"
+      },
+      {
+        rank: 13,
+        title: "Sommersangen",
+        artist: "ZOO Børneklub"
+      },
+      {
+        rank: 14,
+        title: "Jeg bli’r meget snart majestæt",
+        artist: "Andreas Hviid, Amalie Alstrup, Peter Zhelder"
+      }
     ]
   },
   {
@@ -72,20 +185,76 @@ const archiveData = [
     topPodcast: null,
     topArtists: ["Phlake", "Mercedes the Virus", "Dua Lipa", "Ida Laurberg", "Stig Rossen"],
     songs: [
-      { rank: 1, title: "T.I.D.O.Y.S.", artist: "Phlake, Mercedes the Virus" },
-      { rank: 2, title: "Better Days", artist: "Phlake" },
-      { rank: 3, title: "Don’t Start Now", artist: "Dua Lipa" },
-      { rank: 4, title: "Jeg Ka' Rigtig Godt Li' Dig", artist: "Ida Laurberg, andreas odbjerg" },
-      { rank: 5, title: "Jeg er på vej", artist: "Stig Rossen, Jamie Morton" },
-      { rank: 6, title: "Aliens Need Love Too", artist: "Phlake, Mercedes the Virus" },
-      { rank: 7, title: "Uden Dig", artist: "Ukendt Kunstner" },
-      { rank: 8, title: "Borte-Tit", artist: "Minisjang" },
-      { rank: 9, title: "Du er mit hjerteslag", artist: "Stig Rossen, Birgitte Raaberg" },
-      { rank: 10, title: "Get It", artist: "Phlake, Esthero" },
-      { rank: 11, title: "STOR MAN", artist: "Tobias Rahim, Victor Leksell" },
-      { rank: 12, title: "Hena", artist: "Ukendt Kunstner" },
-      { rank: 13, title: "Føles Godt", artist: "URO, Mekdes" },
-      { rank: 14, title: "2min (feat. Vera)", artist: "Phlake, Vera" }
+      {
+        rank: 1,
+        title: "T.I.D.O.Y.S.",
+        artist: "Phlake, Mercedes the Virus"
+      },
+      {
+        rank: 2,
+        title: "Better Days",
+        artist: "Phlake"
+      },
+      {
+        rank: 3,
+        title: "Don’t Start Now",
+        artist: "Dua Lipa"
+      },
+      {
+        rank: 4,
+        title: "Jeg Ka' Rigtig Godt Li' Dig",
+        artist: "Ida Laurberg, andreas odbjerg"
+      },
+      {
+        rank: 5,
+        title: "Jeg er på vej",
+        artist: "Stig Rossen, Jamie Morton"
+      },
+      {
+        rank: 6,
+        title: "Aliens Need Love Too",
+        artist: "Phlake, Mercedes the Virus"
+      },
+      {
+        rank: 7,
+        title: "Uden Dig",
+        artist: "Ukendt Kunstner"
+      },
+      {
+        rank: 8,
+        title: "Borte-Tit",
+        artist: "Minisjang"
+      },
+      {
+        rank: 9,
+        title: "Du er mit hjerteslag",
+        artist: "Stig Rossen, Birgitte Raaberg"
+      },
+      {
+        rank: 10,
+        title: "Get It",
+        artist: "Phlake, Esthero"
+      },
+      {
+        rank: 11,
+        title: "STOR MAN",
+        artist: "Tobias Rahim, Victor Leksell"
+      },
+      {
+        rank: 12,
+        title: "Hena",
+        artist: "Ukendt Kunstner"
+      },
+      {
+        rank: 13,
+        title: "Føles Godt",
+        artist: "URO, Mekdes"
+      },
+      {
+        rank: 14,
+        title: "2min (feat. Vera)",
+        artist: "Phlake, Vera"
+      }
     ]
   },
   {
@@ -98,19 +267,71 @@ const archiveData = [
     topPodcast: null,
     topArtists: ["Phlake", "andreas odbjerg", "De Danske Hyrder", "Tobias Rahim", "Josef"],
     songs: [
-      { rank: 1, title: "2min (feat. Vera)", artist: "Phlake, Vera" },
-      { rank: 2, title: "hjem fra fabrikken", artist: "andreas odbjerg" },
-      { rank: 3, title: "Fra Start", artist: "De Danske Hyrder" },
-      { rank: 4, title: "10 Feet", artist: "Phlake" },
-      { rank: 5, title: "STOR MAND", artist: "Tobias Rahim, andreas odbjerg" },
-      { rank: 6, title: "Er Det For Sent?", artist: "Josef, TopGunn" },
-      { rank: 7, title: "Vi kommer aldrig att dö", artist: "Bo Kaspers Orkester" },
-      { rank: 8, title: "Crystal Silence", artist: "Chick Corea" },
-      { rank: 9, title: "Juice", artist: "Blæst" },
-      { rank: 10, title: "Soft & Hard", artist: "Shy shy shy" },
-      { rank: 11, title: "Snak Lidt Med Mig", artist: "KESI" },
-      { rank: 12, title: "Comes & Goes", artist: "La Felix" },
-      { rank: 13, title: "Fire in Your Eyes", artist: "Willy Beaman, Brittany Foster" }
+      {
+        rank: 1,
+        title: "2min (feat. Vera)",
+        artist: "Phlake, Vera"
+      },
+      {
+        rank: 2,
+        title: "hjem fra fabrikken",
+        artist: "andreas odbjerg"
+      },
+      {
+        rank: 3,
+        title: "Fra Start",
+        artist: "De Danske Hyrder"
+      },
+      {
+        rank: 4,
+        title: "10 Feet",
+        artist: "Phlake"
+      },
+      {
+        rank: 5,
+        title: "STOR MAND",
+        artist: "Tobias Rahim, andreas odbjerg"
+      },
+      {
+        rank: 6,
+        title: "Er Det For Sent?",
+        artist: "Josef, TopGunn"
+      },
+      {
+        rank: 7,
+        title: "Vi kommer aldrig att dö",
+        artist: "Bo Kaspers Orkester"
+      },
+      {
+        rank: 8,
+        title: "Crystal Silence",
+        artist: "Chick Corea"
+      },
+      {
+        rank: 9,
+        title: "Juice",
+        artist: "Blæst"
+      },
+      {
+        rank: 10,
+        title: "Soft & Hard",
+        artist: "Shy shy shy"
+      },
+      {
+        rank: 11,
+        title: "Snak Lidt Med Mig",
+        artist: "KESI"
+      },
+      {
+        rank: 12,
+        title: "Comes & Goes",
+        artist: "La Felix"
+      },
+      {
+        rank: 13,
+        title: "Fire in Your Eyes",
+        artist: "Willy Beaman, Brittany Foster"
+      }
     ]
   },
   {
@@ -123,19 +344,71 @@ const archiveData = [
     topPodcast: null,
     topArtists: ["Phlake", "Mercedes the Virus", "P3", "Felix Sandman", "Astrid S"],
     songs: [
-      { rank: 1, title: "Aliens Need Love Too", artist: "Phlake, Mercedes the Virus" },
-      { rank: 2, title: "Lidt til Lægterne", artist: "P3, Lidt til Lægterne" },
-      { rank: 3, title: "RELATIONS", artist: "Felix Sandman, Astrid S" },
-      { rank: 4, title: "Over", artist: "Aérotique, Tara Mobee" },
-      { rank: 5, title: "Never Meant to Last", artist: "Citna" },
-      { rank: 6, title: "Hit and Run", artist: "Goldbird, Dominic Neill" },
-      { rank: 7, title: "Running - TELYKast Remix", artist: "Arlissa, TELYKAST" },
-      { rank: 8, title: "Dreaming All Night", artist: "&around" },
-      { rank: 9, title: "Anybody Else", artist: "Moseqar" },
-      { rank: 10, title: "Buongiorno", artist: "KIDD" },
-      { rank: 11, title: "Boy In The Picture", artist: "Kid Crème, Jolyon Petch, Sian Evans" },
-      { rank: 12, title: "Happiest Year", artist: "Jaymes Young" },
-      { rank: 13, title: "Somewhere over the Rainbow", artist: "Hugo Rasmussen" }
+      {
+        rank: 1,
+        title: "Aliens Need Love Too",
+        artist: "Phlake, Mercedes the Virus"
+      },
+      {
+        rank: 2,
+        title: "Lidt til Lægterne",
+        artist: "P3, Lidt til Lægterne"
+      },
+      {
+        rank: 3,
+        title: "RELATIONS",
+        artist: "Felix Sandman, Astrid S"
+      },
+      {
+        rank: 4,
+        title: "Over",
+        artist: "Aérotique, Tara Mobee"
+      },
+      {
+        rank: 5,
+        title: "Never Meant to Last",
+        artist: "Citna"
+      },
+      {
+        rank: 6,
+        title: "Hit and Run",
+        artist: "Goldbird, Dominic Neill"
+      },
+      {
+        rank: 7,
+        title: "Running - TELYKast Remix",
+        artist: "Arlissa, TELYKAST"
+      },
+      {
+        rank: 8,
+        title: "Dreaming All Night",
+        artist: "&around"
+      },
+      {
+        rank: 9,
+        title: "Anybody Else",
+        artist: "Moseqar"
+      },
+      {
+        rank: 10,
+        title: "Buongiorno",
+        artist: "KIDD"
+      },
+      {
+        rank: 11,
+        title: "Boy In The Picture",
+        artist: "Kid Crème, Jolyon Petch, Sian Evans"
+      },
+      {
+        rank: 12,
+        title: "Happiest Year",
+        artist: "Jaymes Young"
+      },
+      {
+        rank: 13,
+        title: "Somewhere over the Rainbow",
+        artist: "Hugo Rasmussen"
+      }
     ]
   },
   {
@@ -148,19 +421,71 @@ const archiveData = [
     topPodcast: null,
     topArtists: ["Shalom Dubas", "JAYDOT", "Khalid", "andreas odbjerg", "Vera"],
     songs: [
-      { rank: 1, title: "Something Like This", artist: "Shalom Dubas, JAYDOT" },
-      { rank: 2, title: "Know Your Worth", artist: "Khalid, Disclosure" },
-      { rank: 3, title: "føler mig selv 100", artist: "andreas odbjerg" },
-      { rank: 4, title: "Antananarivo", artist: "Vera" },
-      { rank: 5, title: "All Around Me", artist: "Justin Bieber" },
-      { rank: 6, title: "Would It Be Ok", artist: "AFSHEEN, Angel Taylor" },
-      { rank: 7, title: "Slip Away", artist: "Phlake, Mercedes the Virus" },
-      { rank: 8, title: "better off - filous remix", artist: "Jeremy Zucker, Chelsea Cutler, filous" },
-      { rank: 9, title: "July", artist: "Noah Cyrus" },
-      { rank: 10, title: "Shot Down", artist: "Khalid" },
-      { rank: 11, title: "When You Were Mine", artist: "Gill Chang, Cimo Fränkel" },
-      { rank: 12, title: "Sunrise", artist: "Norah Jones" },
-      { rank: 13, title: "When Will I See You Again", artist: "Shakka, Amtrac" }
+      {
+        rank: 1,
+        title: "Something Like This",
+        artist: "Shalom Dubas, JAYDOT"
+      },
+      {
+        rank: 2,
+        title: "Know Your Worth",
+        artist: "Khalid, Disclosure"
+      },
+      {
+        rank: 3,
+        title: "føler mig selv 100",
+        artist: "andreas odbjerg"
+      },
+      {
+        rank: 4,
+        title: "Antananarivo",
+        artist: "Vera"
+      },
+      {
+        rank: 5,
+        title: "All Around Me",
+        artist: "Justin Bieber"
+      },
+      {
+        rank: 6,
+        title: "Would It Be Ok",
+        artist: "AFSHEEN, Angel Taylor"
+      },
+      {
+        rank: 7,
+        title: "Slip Away",
+        artist: "Phlake, Mercedes the Virus"
+      },
+      {
+        rank: 8,
+        title: "better off - filous remix",
+        artist: "Jeremy Zucker, Chelsea Cutler, filous"
+      },
+      {
+        rank: 9,
+        title: "July",
+        artist: "Noah Cyrus"
+      },
+      {
+        rank: 10,
+        title: "Shot Down",
+        artist: "Khalid"
+      },
+      {
+        rank: 11,
+        title: "When You Were Mine",
+        artist: "Gill Chang, Cimo Fränkel"
+      },
+      {
+        rank: 12,
+        title: "Sunrise",
+        artist: "Norah Jones"
+      },
+      {
+        rank: 13,
+        title: "When Will I See You Again",
+        artist: "Shakka, Amtrac"
+      }
     ]
   },
   {
@@ -173,19 +498,71 @@ const archiveData = [
     topPodcast: null,
     topArtists: ["Mike Posner", "Mickey", "Chris Brown", "Karl William", "Famous Yesterday"],
     songs: [
-      { rank: 1, title: "Move On", artist: "Mike Posner" },
-      { rank: 2, title: "Feel It", artist: "Mickey, Theophilus London" },
-      { rank: 3, title: "Undecided", artist: "Chris Brown" },
-      { rank: 4, title: "Selvom Du", artist: "Karl William" },
-      { rank: 5, title: "Make You", artist: "Famous Yesterday" },
-      { rank: 6, title: "Creep On Me", artist: "GASHI, French Montana, DJ Snake" },
-      { rank: 7, title: "Bad Timing", artist: "Andrey Azizov, loren north" },
-      { rank: 8, title: "Blank Marquee", artist: "Yuna, G-Eazy" },
-      { rank: 9, title: "How Do You Sleep?", artist: "Sam Smith" },
-      { rank: 10, title: "Cross Me", artist: "Ed Sheeran, Chance the Rapper, PnB Rock" },
-      { rank: 11, title: "Aliv3", artist: "Kings" },
-      { rank: 12, title: "Carry On", artist: "Kygo, Rita Ora" },
-      { rank: 13, title: "Old School Love", artist: "NEIKED, Nirob Islam" }
+      {
+        rank: 1,
+        title: "Move On",
+        artist: "Mike Posner"
+      },
+      {
+        rank: 2,
+        title: "Feel It",
+        artist: "Mickey, Theophilus London"
+      },
+      {
+        rank: 3,
+        title: "Undecided",
+        artist: "Chris Brown"
+      },
+      {
+        rank: 4,
+        title: "Selvom Du",
+        artist: "Karl William"
+      },
+      {
+        rank: 5,
+        title: "Make You",
+        artist: "Famous Yesterday"
+      },
+      {
+        rank: 6,
+        title: "Creep On Me",
+        artist: "GASHI, French Montana, DJ Snake"
+      },
+      {
+        rank: 7,
+        title: "Bad Timing",
+        artist: "Andrey Azizov, loren north"
+      },
+      {
+        rank: 8,
+        title: "Blank Marquee",
+        artist: "Yuna, G-Eazy"
+      },
+      {
+        rank: 9,
+        title: "How Do You Sleep?",
+        artist: "Sam Smith"
+      },
+      {
+        rank: 10,
+        title: "Cross Me",
+        artist: "Ed Sheeran, Chance the Rapper, PnB Rock"
+      },
+      {
+        rank: 11,
+        title: "Aliv3",
+        artist: "Kings"
+      },
+      {
+        rank: 12,
+        title: "Carry On",
+        artist: "Kygo, Rita Ora"
+      },
+      {
+        rank: 13,
+        title: "Old School Love",
+        artist: "NEIKED, Nirob Islam"
+      }
     ]
   },
   {
@@ -198,19 +575,71 @@ const archiveData = [
     topPodcast: null,
     topArtists: ["Phlake", "Frank Ocean", "Calvin Harris", "Drake", "KESI"],
     songs: [
-      { rank: 1, title: "New Slow", artist: "Phlake" },
-      { rank: 2, title: "Moon River", artist: "Frank Ocean" },
-      { rank: 3, title: "Promises", artist: "Calvin Harris, Sam Smith, Jessie Reyez" },
-      { rank: 4, title: "Don’t Matter To Me", artist: "Drake, Michael Jackson" },
-      { rank: 5, title: "Kom Over", artist: "KESI" },
-      { rank: 6, title: "Let's Go", artist: "Khalid" },
-      { rank: 7, title: "Told You So", artist: "Miguel" },
-      { rank: 8, title: "Rich & Sad", artist: "Post Malone" },
-      { rank: 9, title: "Finesse - Remix", artist: "Bruno Mars, Cardi B" },
-      { rank: 10, title: "Don't Let Me Be Yours", artist: "Zara Larsson" },
-      { rank: 11, title: "Stoned", artist: "Blondage" },
-      { rank: 12, title: "Thunderclouds", artist: "Sia, Diplo, Labrinth, LSD" },
-      { rank: 13, title: "Frisk Igen", artist: "Dusin" }
+      {
+        rank: 1,
+        title: "New Slow",
+        artist: "Phlake"
+      },
+      {
+        rank: 2,
+        title: "Moon River",
+        artist: "Frank Ocean"
+      },
+      {
+        rank: 3,
+        title: "Promises",
+        artist: "Calvin Harris, Sam Smith, Jessie Reyez"
+      },
+      {
+        rank: 4,
+        title: "Don’t Matter To Me",
+        artist: "Drake, Michael Jackson"
+      },
+      {
+        rank: 5,
+        title: "Kom Over",
+        artist: "KESI"
+      },
+      {
+        rank: 6,
+        title: "Let's Go",
+        artist: "Khalid"
+      },
+      {
+        rank: 7,
+        title: "Told You So",
+        artist: "Miguel"
+      },
+      {
+        rank: 8,
+        title: "Rich & Sad",
+        artist: "Post Malone"
+      },
+      {
+        rank: 9,
+        title: "Finesse - Remix",
+        artist: "Bruno Mars, Cardi B"
+      },
+      {
+        rank: 10,
+        title: "Don't Let Me Be Yours",
+        artist: "Zara Larsson"
+      },
+      {
+        rank: 11,
+        title: "Stoned",
+        artist: "Blondage"
+      },
+      {
+        rank: 12,
+        title: "Thunderclouds",
+        artist: "Sia, Diplo, Labrinth, LSD"
+      },
+      {
+        rank: 13,
+        title: "Frisk Igen",
+        artist: "Dusin"
+      }
     ]
   },
   {
@@ -223,52 +652,102 @@ const archiveData = [
     topPodcast: null,
     topArtists: ["Moses: Andreas", "Fie Laursen", "Frank Ocean", "Lorde", "Francis and the Lights"],
     songs: [
-      { rank: 1, title: "Gazeller", artist: "Moses: Andreas" },
-      { rank: 2, title: "Justin", artist: "Fie Laursen" },
-      { rank: 3, title: "Biking", artist: "Frank Ocean, JAY-Z, Tyler, The Creator" },
-      { rank: 4, title: "Green Light", artist: "Lorde" },
-      { rank: 5, title: "May I Have This Dance", artist: "Francis and the Lights, Chance the Rapper" },
-      { rank: 6, title: "Ouch", artist: "Phlake" },
-      { rank: 7, title: "On Hold", artist: "The xx" },
-      { rank: 8, title: "I'm the One", artist: "DJ Khaled, Justin Bieber, Quavo, Chance the Rapper, Lil Wayne" },
-      { rank: 9, title: "Last Cigarette", artist: "kennedi" },
-      { rank: 10, title: "Slide", artist: "Calvin Harris, Frank Ocean, Migos" },
-      { rank: 11, title: "Such A Boy", artist: "Astrid S" },
-      { rank: 12, title: "Galway Girl", artist: "Ed Sheeran, Martin Jensen" },
-      { rank: 13, title: "Reflection", artist: "Scarlet Pleasure" }
+      {
+        rank: 1,
+        title: "Gazeller",
+        artist: "Moses: Andreas"
+      },
+      {
+        rank: 2,
+        title: "Justin",
+        artist: "Fie Laursen"
+      },
+      {
+        rank: 3,
+        title: "Biking",
+        artist: "Frank Ocean, JAY-Z, Tyler, The Creator"
+      },
+      {
+        rank: 4,
+        title: "Green Light",
+        artist: "Lorde"
+      },
+      {
+        rank: 5,
+        title: "May I Have This Dance",
+        artist: "Francis and the Lights, Chance the Rapper"
+      },
+      {
+        rank: 6,
+        title: "Ouch",
+        artist: "Phlake"
+      },
+      {
+        rank: 7,
+        title: "On Hold",
+        artist: "The xx"
+      },
+      {
+        rank: 8,
+        title: "I'm the One",
+        artist: "DJ Khaled, Justin Bieber, Quavo, Chance the Rapper, Lil Wayne"
+      },
+      {
+        rank: 9,
+        title: "Last Cigarette",
+        artist: "kennedi"
+      },
+      {
+        rank: 10,
+        title: "Slide",
+        artist: "Calvin Harris, Frank Ocean, Migos"
+      },
+      {
+        rank: 11,
+        title: "Such A Boy",
+        artist: "Astrid S"
+      },
+      {
+        rank: 12,
+        title: "Galway Girl",
+        artist: "Ed Sheeran, Martin Jensen"
+      },
+      {
+        rank: 13,
+        title: "Reflection",
+        artist: "Scarlet Pleasure"
+      }
     ]
   }
 ];
 
-const mediaAssets = {
+const spotifyLinks = {
   artists: {
-    "phlake": "",
-    "mike posner": "",
-    "wads": "",
-    "stig rossen": "",
-    "khalid": "",
-    "frank ocean": "",
-    "andreas odbjerg": "",
-    "mercedes the virus": "",
-    "laus høybye": "",
-    "zoo børneklub": ""
+    "phlake": "https://open.spotify.com/artist/7xSP5ABX7IOegINeUtUVay",
+    "mike posner": "https://open.spotify.com/artist/2KsP6tYLJlTBvSUxnwlVWa",
+    "wads": "https://open.spotify.com/artist/6MrX2ndZBm5xqWGTX26X2M",
+    "stig rossen": "https://open.spotify.com/artist/2z8iTQwzBF1lbIN2oUkdIP",
+    "khalid": "https://open.spotify.com/artist/6LuN9FCkKOj5PcnpouEgny",
+    "frank ocean": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM",
+    "dua lipa": "https://open.spotify.com/artist/6M2wZ9GZgrQXHCFfjv46we",
+    "calvin harris": "https://open.spotify.com/artist/7CajNmpbOovFoOoasH2HaY",
+    "drake": "https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4",
+    "kesi": "https://open.spotify.com/artist/0nLYXiUznRjvmr33tncX5P",
+    "andreas odbjerg": "https://open.spotify.com/artist/6Jv3eaCuH7gyn1fUZeO3ky",
+    "tobias rahim": "https://open.spotify.com/artist/7Fss3mTh5WbeO0mPq8m66B"
   },
-  covers: {
-    "come here": "",
-    "beast": "",
-    "under the influence": "",
-    "krumme's sang": "",
-    "menneskesøn": "",
-    "jeg er på vej": "",
-    "t.i.d.o.y.s.": "",
-    "aliens need love too": "",
-    "new slow": "",
-    "move on": ""
+  tracks: {
+    "come here": "https://open.spotify.com/track/63ms88HVjrxc1gwx4bzrmO",
+    "menneskesøn": "https://open.spotify.com/track/5G4c6rStzocM8pEsC0Rrjv",
+    "krumme's sang": "https://open.spotify.com/track/0yjCA5KufU4OQP6VaG6nRI",
+    "new slow": "https://open.spotify.com/track/2G4YftYeP6Q0TJzLEKcxpC",
+    "move on": "https://open.spotify.com/track/1zF0BxtBzdIYTBm2L4tULk"
   }
 };
 
 let selectedYear = 2025;
 let minutesChart;
+const imageCache = new Map();
 
 const formatNumber = (value) => new Intl.NumberFormat("da-DK").format(value);
 
@@ -278,7 +757,7 @@ function normalize(value) {
 
 function getInitials(value) {
   return String(value || "?")
-    .split(/[ ,.&]+/)
+    .split(/[ ,.&:()"/-]+/)
     .filter(Boolean)
     .slice(0, 2)
     .map((word) => word[0])
@@ -294,28 +773,76 @@ function getSelectedData() {
   return archiveData.find((item) => item.year === Number(selectedYear)) || archiveData[0];
 }
 
-function getArtistImage(name) {
-  return mediaAssets.artists[normalize(name)] || "";
+function getArtistSpotifyUrl(name) {
+  return spotifyLinks.artists[normalize(name)] || "";
 }
 
-function getCoverImage(title) {
-  return mediaAssets.covers[normalize(title)] || "";
+function getTrackSpotifyUrl(title) {
+  return spotifyLinks.tracks[normalize(title)] || "";
+}
+
+async function getSpotifyThumbnail(spotifyUrl) {
+  if (!spotifyUrl) return "";
+
+  if (imageCache.has(spotifyUrl)) {
+    return imageCache.get(spotifyUrl);
+  }
+
+  try {
+    const endpoint = `https://open.spotify.com/oembed?url=${encodeURIComponent(spotifyUrl)}`;
+    const response = await fetch(endpoint);
+    const data = await response.json();
+    const thumbnail = data.thumbnail_url || "";
+    imageCache.set(spotifyUrl, thumbnail);
+    return thumbnail;
+  } catch (error) {
+    imageCache.set(spotifyUrl, "");
+    return "";
+  }
+}
+
+async function hydrateSpotifyImages() {
+  const artistElements = Array.from(document.querySelectorAll("[data-spotify-artist-url]"));
+  const trackElements = Array.from(document.querySelectorAll("[data-spotify-track-url]"));
+
+  await Promise.all([
+    ...artistElements.map(async (element) => {
+      const url = element.dataset.spotifyArtistUrl;
+      const name = element.dataset.name;
+      const thumbnail = await getSpotifyThumbnail(url);
+
+      if (thumbnail) {
+        element.innerHTML = `<img src="${thumbnail}" alt="${name}" loading="lazy" />`;
+      }
+    }),
+    ...trackElements.map(async (element) => {
+      const url = element.dataset.spotifyTrackUrl;
+      const title = element.dataset.title;
+      const thumbnail = await getSpotifyThumbnail(url);
+
+      if (thumbnail) {
+        element.innerHTML = `<img src="${thumbnail}" alt="${title}" loading="lazy" />`;
+      }
+    })
+  ]);
 }
 
 function createAvatar(name) {
-  const src = getArtistImage(name);
+  const spotifyUrl = getArtistSpotifyUrl(name);
+
   return `
-    <div class="avatar" title="${name}">
-      ${src ? `<img src="${src}" alt="${name}" onerror="this.style.display='none'; this.parentElement.dataset.fallback='${getInitials(name)}';" />` : getInitials(name)}
+    <div class="avatar" title="${name}" data-name="${name}" data-spotify-artist-url="${spotifyUrl}">
+      ${getInitials(name)}
     </div>
   `;
 }
 
 function createCover(song) {
-  const src = getCoverImage(song.title);
+  const spotifyUrl = song.spotifyUrl || getTrackSpotifyUrl(song.title);
+
   return `
-    <div class="cover" title="${song.title}">
-      ${src ? `<img src="${src}" alt="${song.title}" onerror="this.style.display='none'; this.parentElement.dataset.fallback='${getInitials(song.title)}';" />` : getInitials(song.title)}
+    <div class="cover" title="${song.title}" data-title="${song.title}" data-spotify-track-url="${spotifyUrl}">
+      ${getInitials(song.title)}
     </div>
   `;
 }
@@ -670,6 +1197,7 @@ function renderAll() {
   renderWrappedCards();
   renderCompareCards();
   renderMinutesChart();
+  hydrateSpotifyImages();
 }
 
 setupYearFilter();
