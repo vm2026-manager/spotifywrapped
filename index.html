@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mit Spotify-arkiv 2017–2025</title>
+  <title>Mit Spotify-arkiv</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -11,186 +11,185 @@
   <header class="topbar">
     <a class="brand" href="#top" aria-label="Gå til toppen">
       <div class="spotify-dot">♪</div>
-      <span>Mit Spotify-arkiv</span>
+      <span>Wrapped Arkiv</span>
     </a>
 
     <nav class="nav">
       <a href="#overview">Overblik</a>
-      <a href="#year-focus">År</a>
-      <a href="#repeat">Gengangere</a>
-      <a href="#wrapped">Wrapped</a>
+      <a href="#years">År</a>
+      <a href="#heatmap">Heatmap</a>
       <a href="#compare">Sammenlign</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-text">
+      <div>
         <p class="eyebrow">Personligt musikarkiv</p>
-        <h1>Mit Spotify-arkiv<br><span>2017–2025</span></h1>
+        <h1>Mine musikvaner gennem tiden</h1>
         <p class="hero-subtitle">
-          Mine musikvaner gennem ni år — med fokus på sange, kunstnere og gengangere frem for rå lyttetid.
+          Mit Spotify-arkiv fra 2017 til 2025 — med fokus på sange, kunstnere og gengangere.
         </p>
-
-        <div class="year-filter" id="yearFilter">
-          <button class="active" data-year="2025">2025</button>
-          <button data-year="2024">2024</button>
-          <button data-year="2023">2023</button>
-          <button data-year="2022">2022</button>
-          <button data-year="2021">2021</button>
-          <button data-year="2020">2020</button>
-          <button data-year="2019">2019</button>
-          <button data-year="2018">2018</button>
-          <button data-year="2017">2017</button>
-          <button data-year="all">Alle</button>
-        </div>
       </div>
 
-      <div class="hero-stack" aria-hidden="true">
-        <div class="stack-card stack-2025">2025</div>
-        <div class="stack-card stack-2024">2024</div>
-        <div class="stack-card stack-2023">2023</div>
-        <div class="stack-card stack-2022">2022</div>
-        <div class="stack-card stack-2021">2021</div>
+      <div class="year-filter" id="yearFilter">
+        <button class="active" data-year="2025">2025</button>
+        <button data-year="2024">2024</button>
+        <button data-year="2023">2023</button>
+        <button data-year="2022">2022</button>
+        <button data-year="2021">2021</button>
+        <button data-year="2020">2020</button>
+        <button data-year="2019">2019</button>
+        <button data-year="2018">2018</button>
+        <button data-year="2017">2017</button>
+        <button data-year="all">Alle</button>
       </div>
     </section>
 
-    <section id="overview" class="compact-overview">
-      <article class="panel feature-panel">
-        <div class="feature-content">
-          <div>
-            <p class="section-label">Valgt år</p>
-            <h2 id="selectedYearTitle">2025</h2>
-            <p id="selectedYearType" class="muted">Wrapped + favoritsange-data</p>
-          </div>
+    <section id="overview" class="overview-grid">
+      <article class="panel current-year-panel">
+        <p class="section-label">Nuværende år</p>
+        <h2 id="currentYear">2025</h2>
 
-          <div class="feature-grid">
-            <div class="mini-stat">
-              <span>#1-sang</span>
-              <strong id="featureTopSong">come here</strong>
-            </div>
-            <div class="mini-stat">
-              <span>#1-kunstner</span>
-              <strong id="featureTopArtist">Phlake</strong>
-            </div>
-            <div class="mini-stat">
-              <span>Genre/emne</span>
-              <strong id="featureGenre">Dansk pop</strong>
-            </div>
-            <div class="mini-stat">
-              <span>Minutter</span>
-              <strong id="featureMinutes">41.100</strong>
-            </div>
+        <div class="metric-grid">
+          <div class="metric-card">
+            <span>#1-kunstner</span>
+            <strong id="metricArtist">Phlake</strong>
+            <small>Årets kunstner</small>
+          </div>
+          <div class="metric-card">
+            <span>#1-sang</span>
+            <strong id="metricSong">come here</strong>
+            <small>Mest markante sang</small>
+          </div>
+          <div class="metric-card">
+            <span>Topgenre</span>
+            <strong id="metricGenre">Dansk pop</strong>
+            <small>Årets lyd</small>
+          </div>
+          <div class="metric-card">
+            <span>Minutter</span>
+            <strong id="metricMinutes">41.100</strong>
+            <small>Kun når data findes</small>
           </div>
         </div>
       </article>
 
-      <article class="panel note-panel">
-        <p class="section-label">Databrug</p>
+      <article class="panel explainer-panel">
+        <p class="section-label">Sådan læses siden</p>
         <h3>Musik først</h3>
-        <p class="muted">
-          Podcast- og minutdata bruges kun som kontekst, fordi podcastudbuddet på Spotify har ændret sig over tid.
+        <p>
+          Podcasts og minutter vises som kontekst. Den primære sammenligning er baseret på kunstnere,
+          sange og musikalske mønstre, fordi podcastudbuddet på Spotify har ændret sig over tid.
         </p>
       </article>
     </section>
 
-    <section id="year-focus" class="two-grid year-focus-grid">
+    <section class="top-grid">
       <article class="panel">
-        <div class="section-title-inline">
+        <div class="panel-title-row">
           <div>
             <p class="section-label">Topkunstnere</p>
-            <h2 id="artistSectionTitle">2025</h2>
+            <h2 id="artistsTitle">2025</h2>
           </div>
         </div>
-        <div id="topArtists" class="artist-list"></div>
+        <div id="artistList" class="rank-list"></div>
       </article>
 
       <article class="panel">
-        <div class="section-title-inline">
+        <div class="panel-title-row">
           <div>
             <p class="section-label">Top 5 sange</p>
-            <h2 id="songSectionTitle">2025</h2>
+            <h2 id="songsTitle">2025</h2>
           </div>
         </div>
-        <div id="topSongs" class="song-list"></div>
+        <div id="songList" class="rank-list"></div>
       </article>
     </section>
 
-    <section id="repeat" class="section-block">
-      <div class="section-title-row">
+    <section id="years" class="section-block">
+      <div class="section-heading">
         <div>
-          <p class="eyebrow">På tværs af år</p>
-          <h2>Gengangere</h2>
+          <p class="eyebrow">Tidslinje</p>
+          <h2>Årene i overblik</h2>
         </div>
-        <p class="muted">
-          De kunstnere og sange, der bliver ved med at dukke op i dine toplister.
-        </p>
+        <p>Klik på et år for at skifte fokus øverst på siden.</p>
       </div>
 
-      <div class="two-grid">
-        <article class="panel">
-          <p class="section-label">Kunstnere jeg vender tilbage til</p>
-          <div id="repeatArtists" class="repeat-grid"></div>
-        </article>
+      <div id="yearCards" class="year-cards"></div>
+    </section>
 
-        <article class="panel">
-          <p class="section-label">Sange der går igen</p>
-          <div id="repeatSongs" class="repeat-grid"></div>
-        </article>
+    <section id="heatmap" class="section-block">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Mønstre</p>
+          <h2>Kunstner-heatmap</h2>
+        </div>
+        <p>Hvor højt lå udvalgte kunstnere år for år?</p>
+      </div>
+
+      <div class="panel">
+        <div id="artistHeatmap" class="heatmap"></div>
       </div>
     </section>
 
     <section class="section-block">
-      <div class="section-title-row">
+      <div class="section-heading">
         <div>
-          <p class="eyebrow">Tidslinje</p>
-          <h2>Årene kort fortalt</h2>
+          <p class="eyebrow">Gengangere</p>
+          <h2>Kunstnere og sange der går igen</h2>
         </div>
-        <p class="muted">Klik på et år for at skifte fokus øverst på siden.</p>
+        <p>Det mest interessante på tværs af årene.</p>
       </div>
 
-      <div id="yearCards" class="year-cards-grid"></div>
-    </section>
-
-    <section id="wrapped" class="section-block">
-      <div class="section-title-row">
-        <div>
-          <p class="eyebrow">Supplerende data</p>
-          <h2>Wrapped-tal</h2>
-        </div>
-        <p class="muted">
-          Minutter og podcasts vises som ekstra kontekst, men bruges ikke som hovedmål for sammenligning.
-        </p>
-      </div>
-
-      <div class="two-grid">
+      <div class="repeat-grid">
         <article class="panel">
-          <p class="section-label">Kendte Wrapped-minutter</p>
-          <canvas id="minutesChart"></canvas>
+          <p class="section-label">Kunstnere</p>
+          <div id="repeatArtists" class="repeat-list"></div>
         </article>
 
         <article class="panel">
-          <p class="section-label">Wrapped-kort</p>
-          <div id="wrappedCards" class="wrapped-list"></div>
+          <p class="section-label">Sange</p>
+          <div id="repeatSongs" class="repeat-list"></div>
         </article>
       </div>
     </section>
 
     <section id="compare" class="section-block">
-      <div class="section-title-row">
+      <div class="section-heading">
         <div>
           <p class="eyebrow">Sammenlign</p>
-          <h2>To år mod hinanden</h2>
+          <h2>Sammenlign to år</h2>
         </div>
 
         <div class="compare-controls">
-          <select id="fromYear"></select>
-          <span>vs.</span>
-          <select id="toYear"></select>
+          <label>
+            Fra år
+            <select id="fromYear"></select>
+          </label>
+          <span>→</span>
+          <label>
+            Til år
+            <select id="toYear"></select>
+          </label>
         </div>
       </div>
 
       <div id="compareCards" class="compare-grid"></div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Supplerende</p>
+          <h2>Minutter hvor data findes</h2>
+        </div>
+        <p>Kun Wrapped-år med kendte minuttal er med i grafen.</p>
+      </div>
+
+      <article class="panel chart-panel">
+        <canvas id="minutesChart"></canvas>
+      </article>
     </section>
   </main>
 
