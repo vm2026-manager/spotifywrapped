@@ -8,11 +8,11 @@ const archiveData = [
     topPodcast: null,
     topArtists: ["Phlake", "Mike Posner", "Wads", "Stig Rossen", "Khalid"],
     songs: [
-      { rank: 1, title: "come here", artist: "Wads", minutes: null },
-      { rank: 2, title: "beast", artist: "Wads", minutes: null },
-      { rank: 3, title: "Under The Influence", artist: "ORA", minutes: null },
-      { rank: 4, title: "Lad Det Ske - Fra Frost", artist: "Maria Lucia", minutes: null },
-      { rank: 5, title: "jukeboxx", artist: "Wads", minutes: null }
+      { rank: 1, title: "come here", artist: "Wads" },
+      { rank: 2, title: "beast", artist: "Wads" },
+      { rank: 3, title: "Under The Influence", artist: "ORA" },
+      { rank: 4, title: "Lad Det Ske - Fra Frost", artist: "Maria Lucia" },
+      { rank: 5, title: "jukeboxx", artist: "Wads" }
     ]
   },
   {
@@ -34,7 +34,7 @@ const archiveData = [
   },
   {
     year: 2023,
-    minutes: null,
+    minutes: 61836,
     topArtist: "Phlake",
     topSong: "T.I.D.O.Y.S.",
     topGenre: null,
@@ -50,12 +50,12 @@ const archiveData = [
   },
   {
     year: 2022,
-    minutes: null,
+    minutes: 54390,
     topArtist: "Phlake",
     topSong: "2min (feat. Vera)",
-    topGenre: null,
+    topGenre: "Pop",
     topPodcast: null,
-    topArtists: ["Phlake", "andreas odbjerg", "De Danske Hyrder", "Tobias Rahim", "Josef"],
+    topArtists: ["Phlake", "Mike Posner", "Norah Jones", "andreas odbjerg", "Kygo"],
     songs: [
       { rank: 1, title: "2min (feat. Vera)", artist: "Phlake, Vera" },
       { rank: 2, title: "hjem fra fabrikken", artist: "andreas odbjerg" },
@@ -66,12 +66,12 @@ const archiveData = [
   },
   {
     year: 2021,
-    minutes: null,
-    topArtist: "Phlake",
+    minutes: 60552,
+    topArtist: "Mike Posner",
     topSong: "Aliens Need Love Too",
-    topGenre: null,
+    topGenre: "Tropical house",
     topPodcast: null,
-    topArtists: ["Phlake", "Mercedes the Virus", "P3", "Felix Sandman", "Astrid S"],
+    topArtists: ["Mike Posner", "Phlake", "Justin Bieber", "Khalid", "Zara Larsson"],
     songs: [
       { rank: 1, title: "Aliens Need Love Too", artist: "Phlake, Mercedes the Virus" },
       { rank: 2, title: "Lidt til Lægterne", artist: "P3, Lidt til Lægterne" },
@@ -146,15 +146,22 @@ const archiveData = [
   }
 ];
 
-const mediaAssets = {
+const manualImages = {
   artists: {
     "phlake": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174ca562d7b2a59652b2669433f",
     "mike posner": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051747adb9b4f4a089a65b069e6b9",
     "wads": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174e7fe2c360e75de8f3610dbf3",
     "stig rossen": "https://i.scdn.co/image/981806636aae9d50937955ea70d7229accdf78e6",
     "khalid": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748f77c3eddc1869e9542b04bc",
-    "maria lucia": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517421484cabe4d7d51094f53e2f",
-    "calvin harris": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748ebba5e60113b48de8c11f6b"
+    "justin bieber": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051747e9a06876e8dff502a416d6f",
+    "frank ocean": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051747ee3123dfde6ff0dfe5642fb",
+    "dua lipa": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174c36dd9eb55fb0db4911f25dd",
+    "calvin harris": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051748ebba5e60113b48de8c11f6b",
+    "drake": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051744293385d324db8558179afd9",
+    "kygo": "https://image-cdn-fa.spotifycdn.com/image/ab67616100005174814ca09ab2f07b019c5f5f4b",
+    "norah jones": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517487ab7ae985df4ad39af3cc4e",
+    "andreas odbjerg": "https://image-cdn-fa.spotifycdn.com/image/ab6761610000517495ec93fdc5c07e75ee33c497",
+    "zara larsson": "https://image-cdn-fa.spotifycdn.com/image/ab676161000051746c9a7b87381cd3dcc8a5f65b"
   },
   covers: {
     "come here": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0285c51103eb43960b1a74aced",
@@ -166,12 +173,16 @@ const mediaAssets = {
     "menneskesøn": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e023417c2e639b79f4a7c0fa905",
     "10 feet (feat. gorgeous)": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02bbf9d3419bd072d7c2483fbe",
     "new slow": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02f6ebbdaf7e16444d10c4e84d",
-    "move on": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02be8cf76330e4c079fd2c40e6"
+    "move on": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02be8cf76330e4c079fd2c40e6",
+    "2min (feat. vera)": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02bbf9d3419bd072d7c2483fbe",
+    "aliens need love too": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ad04bd4fc925827b613218f4",
+    "t.i.d.o.y.s.": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ad04bd4fc925827b613218f4"
   }
 };
 
 let selectedYear = 2025;
 let minutesChart;
+const imageCache = new Map();
 
 const formatNumber = (value) => new Intl.NumberFormat("da-DK").format(value);
 
@@ -194,37 +205,72 @@ function getPrimaryArtist(artistText) {
 }
 
 function getSelectedData() {
+  if (selectedYear === "all") return archiveData[0];
   return archiveData.find((item) => item.year === Number(selectedYear)) || archiveData[0];
 }
 
-function getImage(type, key) {
-  return mediaAssets[type][normalize(key)] || "";
+function getManualImage(type, key) {
+  return manualImages[type][normalize(key)] || "";
 }
 
-function avatar(name) {
-  const src = getImage("artists", name);
-  return `
-    <div class="avatar" title="${name}">
-      ${
-        src
-          ? `<img src="${src}" alt="${name}" loading="lazy" onerror="this.remove(); this.parentElement.textContent='${getInitials(name)}';" />`
-          : getInitials(name)
-      }
-    </div>
-  `;
+async function searchArtwork(type, title, artist = "") {
+  const cacheKey = `${type}:${normalize(title)}:${normalize(artist)}`;
+
+  if (imageCache.has(cacheKey)) return imageCache.get(cacheKey);
+
+  const manual =
+    type === "artist"
+      ? getManualImage("artists", title)
+      : getManualImage("covers", title);
+
+  if (manual) {
+    imageCache.set(cacheKey, manual);
+    return manual;
+  }
+
+  const term = type === "artist" ? title : `${title} ${artist}`;
+  const entity = type === "artist" ? "musicArtist" : "song";
+  const url = `https://itunes.apple.com/search?term=${encodeURIComponent(term)}&media=music&entity=${entity}&limit=1`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    let image = "";
+
+    if (data.results && data.results[0]) {
+      image =
+        data.results[0].artworkUrl100 ||
+        data.results[0].artworkUrl60 ||
+        "";
+    }
+
+    if (image) {
+      image = image.replace("100x100bb", "300x300bb");
+    }
+
+    imageCache.set(cacheKey, image);
+    return image;
+  } catch {
+    imageCache.set(cacheKey, "");
+    return "";
+  }
 }
 
-function cover(song) {
-  const src = getImage("covers", song.title);
-  return `
-    <div class="cover" title="${song.title}">
-      ${
-        src
-          ? `<img src="${src}" alt="${song.title}" loading="lazy" onerror="this.remove(); this.parentElement.textContent='${getInitials(song.title)}';" />`
-          : getInitials(song.title)
-      }
-    </div>
-  `;
+function imageBox(className, label, type, title, artist = "") {
+  const id = `${type}-${Math.random().toString(36).slice(2)}`;
+
+  setTimeout(async () => {
+    const element = document.getElementById(id);
+    if (!element) return;
+
+    const src = await searchArtwork(type, title, artist);
+    if (!src) return;
+
+    element.innerHTML = `<img src="${src}" alt="${label}" loading="lazy" />`;
+  }, 0);
+
+  return `<div id="${id}" class="${className}" title="${label}">${getInitials(label)}</div>`;
 }
 
 function updateOverview() {
@@ -237,8 +283,8 @@ function updateOverview() {
   document.getElementById("metricMinutes").textContent =
     typeof item.minutes === "number" ? formatNumber(item.minutes) : "Ikke oplyst";
 
-  document.getElementById("artistsTitle").textContent = item.year;
-  document.getElementById("songsTitle").textContent = item.year;
+  document.getElementById("artistTitle").textContent = item.year;
+  document.getElementById("songTitle").textContent = item.year;
 }
 
 function renderTopArtists() {
@@ -247,7 +293,7 @@ function renderTopArtists() {
   document.getElementById("artistList").innerHTML = item.topArtists.slice(0, 5).map((artist, index) => `
     <div class="rank-row">
       <div class="rank">${index + 1}</div>
-      ${avatar(artist)}
+      ${imageBox("avatar", artist, "artist", artist)}
       <div>
         <div class="item-title">${artist}</div>
         <div class="item-subtitle">${item.year}</div>
@@ -263,12 +309,12 @@ function renderTopSongs() {
   document.getElementById("songList").innerHTML = item.songs.slice(0, 5).map((song) => `
     <div class="rank-row">
       <div class="rank">${song.rank}</div>
-      ${cover(song)}
+      ${imageBox("cover", song.title, "track", song.title, song.artist)}
       <div>
         <div class="item-title">${song.title}</div>
         <div class="item-subtitle">${song.artist}</div>
       </div>
-      <div class="minutes-pill">${song.minutes ? `${song.minutes} min` : ""}</div>
+      <div class="minutes-pill"></div>
     </div>
   `).join("");
 }
@@ -322,7 +368,7 @@ function getArtistRank(yearData, artistName) {
 }
 
 function renderHeatmap() {
-  const artists = ["Phlake", "Stig Rossen", "Wads", "Mike Posner", "Khalid"];
+  const artists = ["Phlake", "Mike Posner", "Stig Rossen", "Khalid", "Frank Ocean"];
   const years = archiveData.map((item) => item.year);
 
   const header = `
@@ -439,7 +485,7 @@ function renderCompareControls() {
   fromSelect.innerHTML = options;
   toSelect.innerHTML = options;
 
-  fromSelect.value = "2024";
+  fromSelect.value = "2021";
   toSelect.value = "2025";
 
   fromSelect.addEventListener("change", renderCompare);
@@ -559,7 +605,7 @@ function setupYearFilter() {
   document.querySelectorAll("#yearFilter button").forEach((button) => {
     button.addEventListener("click", () => {
       if (button.dataset.year === "all") {
-        selectedYear = 2025;
+        selectedYear = "all";
         document.getElementById("years").scrollIntoView({ behavior: "smooth" });
       } else {
         selectedYear = Number(button.dataset.year);
