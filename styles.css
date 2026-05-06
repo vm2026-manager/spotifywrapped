@@ -8,8 +8,7 @@
   --text: #f6fff8;
   --muted: rgba(246, 255, 248, 0.62);
   --green: #1ed760;
-  --green2: #66ff92;
-  --red: #ff4b5f;
+  --green-soft: rgba(30, 215, 96, 0.16);
   --orange: #da741a;
   --pink: #cf3987;
   --purple: #6d51c8;
@@ -234,7 +233,7 @@ h3 {
   margin-bottom: 18px;
 }
 
-.current-year-panel h2 {
+.current-panel h2 {
   margin-bottom: 24px;
   color: var(--green);
   font-size: clamp(70px, 9vw, 130px);
@@ -281,7 +280,7 @@ h3 {
   color: var(--muted);
 }
 
-.explainer-panel p {
+.note-panel p {
   max-width: 520px;
   color: var(--muted);
   line-height: 1.6;
@@ -376,7 +375,7 @@ h3 {
   border-radius: 999px;
   padding: 6px 10px;
   color: var(--green);
-  background: var(--green-soft, rgba(30, 215, 96, 0.16));
+  background: var(--green-soft);
   font-size: 12px;
   font-weight: 900;
   white-space: nowrap;
@@ -475,7 +474,7 @@ h3 {
 }
 
 .heatmap-table {
-  min-width: 800px;
+  min-width: 820px;
   display: grid;
   gap: 8px;
 }
@@ -683,7 +682,7 @@ footer span {
     font-size: 44px;
   }
 
-  .current-year-panel h2 {
+  .current-panel h2 {
     font-size: 76px;
   }
 
