@@ -11,13 +11,13 @@
   <header class="topbar">
     <a class="brand" href="#top" aria-label="Gå til toppen">
       <div class="spotify-dot">♪</div>
-      <span>Wrapped Arkiv</span>
+      <span>Spotify-arkiv</span>
     </a>
 
     <nav class="nav">
       <a href="#overview">Overblik</a>
       <a href="#years">År</a>
-      <a href="#heatmap">Heatmap</a>
+      <a href="#patterns">Mønstre</a>
       <a href="#compare">Sammenlign</a>
     </nav>
   </header>
@@ -28,7 +28,7 @@
         <p class="eyebrow">Personligt musikarkiv</p>
         <h1>Mine musikvaner gennem tiden</h1>
         <p class="hero-subtitle">
-          Mit Spotify-arkiv fra 2017 til 2025 — med fokus på sange, kunstnere og gengangere.
+          Et samlet arkiv over mine Spotify-år — med fokus på topkunstnere, topsange og gengangere.
         </p>
       </div>
 
@@ -47,8 +47,8 @@
     </section>
 
     <section id="overview" class="overview-grid">
-      <article class="panel current-year-panel">
-        <p class="section-label">Nuværende år</p>
+      <article class="panel current-panel">
+        <p class="section-label">Valgt år</p>
         <h2 id="currentYear">2025</h2>
 
         <div class="metric-grid">
@@ -57,30 +57,33 @@
             <strong id="metricArtist">Phlake</strong>
             <small>Årets kunstner</small>
           </div>
+
           <div class="metric-card">
             <span>#1-sang</span>
             <strong id="metricSong">come here</strong>
-            <small>Mest markante sang</small>
+            <small>Årets sang</small>
           </div>
+
           <div class="metric-card">
-            <span>Topgenre</span>
+            <span>Genre/emne</span>
             <strong id="metricGenre">Dansk pop</strong>
-            <small>Årets lyd</small>
+            <small>Hvor data findes</small>
           </div>
+
           <div class="metric-card">
             <span>Minutter</span>
             <strong id="metricMinutes">41.100</strong>
-            <small>Kun når data findes</small>
+            <small>Kun Wrapped-år</small>
           </div>
         </div>
       </article>
 
-      <article class="panel explainer-panel">
+      <article class="panel note-panel">
         <p class="section-label">Sådan læses siden</p>
         <h3>Musik først</h3>
         <p>
-          Podcasts og minutter vises som kontekst. Den primære sammenligning er baseret på kunstnere,
-          sange og musikalske mønstre, fordi podcastudbuddet på Spotify har ændret sig over tid.
+          Podcast- og minutdata bruges kun som kontekst. Sammenligningen på tværs af år bygger primært på
+          kunstnere, sange og gentagelser, fordi podcastudbuddet på Spotify har ændret sig.
         </p>
       </article>
     </section>
@@ -90,9 +93,10 @@
         <div class="panel-title-row">
           <div>
             <p class="section-label">Topkunstnere</p>
-            <h2 id="artistsTitle">2025</h2>
+            <h2 id="artistTitle">2025</h2>
           </div>
         </div>
+
         <div id="artistList" class="rank-list"></div>
       </article>
 
@@ -100,9 +104,10 @@
         <div class="panel-title-row">
           <div>
             <p class="section-label">Top 5 sange</p>
-            <h2 id="songsTitle">2025</h2>
+            <h2 id="songTitle">2025</h2>
           </div>
         </div>
+
         <div id="songList" class="rank-list"></div>
       </article>
     </section>
@@ -119,7 +124,7 @@
       <div id="yearCards" class="year-cards"></div>
     </section>
 
-    <section id="heatmap" class="section-block">
+    <section id="patterns" class="section-block">
       <div class="section-heading">
         <div>
           <p class="eyebrow">Mønstre</p>
